@@ -509,6 +509,18 @@ make_background (const gchar *text, guint width, guint height,
                           (PLUGIN_PKGDATADIR
                            "/theme/chooser/thumb-unselected.png", NULL);
 
+      clutter_container_add_actor (CLUTTER_CONTAINER (clutter_stage_get_default ()), space_sel);
+      clutter_actor_hide (space_sel);
+
+      clutter_container_add_actor (CLUTTER_CONTAINER (clutter_stage_get_default ()), space_unsel);
+      clutter_actor_hide (space_unsel);
+
+      clutter_container_add_actor (CLUTTER_CONTAINER (clutter_stage_get_default ()), thumb_sel);
+      clutter_actor_hide (thumb_sel);
+
+      clutter_container_add_actor (CLUTTER_CONTAINER (clutter_stage_get_default ()), thumb_unsel);
+      clutter_actor_hide (thumb_unsel);
+
       g_object_ref (space_sel);
       g_object_ref (space_unsel);
       g_object_ref (thumb_sel);
