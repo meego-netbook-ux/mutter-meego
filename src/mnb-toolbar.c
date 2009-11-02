@@ -1793,8 +1793,8 @@ mnb_toolbar_autostart_panels_cb (gpointer toolbar)
         case STATUS_ZONE:
         case WIFI_APPLET:
         case VOLUME_APPLET:
-        case BATTERY_APPLET:
 #if 0
+        case BATTERY_APPLET:
         case BT_APPLET:
 #endif
           if (!priv->panels[i])
