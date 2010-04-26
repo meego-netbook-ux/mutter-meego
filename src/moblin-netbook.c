@@ -977,6 +977,8 @@ moblin_netbook_plugin_init (MoblinNetbookPlugin *self)
                                                  options_keys,
                                                  G_N_ELEMENTS (options_keys));
     }
+
+  priv->scaled_background = TRUE;
 }
 
 /*
@@ -2727,7 +2729,6 @@ desktop_background_changed_cb (GConfClient *client,
                                gpointer     data)
 {
   MutterPlugin               *plugin = MUTTER_PLUGIN (data);
-  MoblinNetbookPluginPrivate *priv = MOBLIN_NETBOOK_PLUGIN (plugin)->priv;
   const gchar                *filename = NULL;
   GConfValue                 *value;
   const gchar                *key;
@@ -2748,8 +2749,11 @@ desktop_background_changed_cb (GConfClient *client,
 
       setup_desktop_background (plugin, filename);
     }
+#if 0
   else if (value && !strcmp (key, KEY_BG_OPTIONS))
     {
+      MoblinNetbookPluginPrivate *priv = MOBLIN_NETBOOK_PLUGIN (plugin)->priv;
+
       g_return_if_fail (value->type == GCONF_VALUE_STRING);
 
       const gchar *opt = gconf_value_get_string (value);
@@ -2762,6 +2766,7 @@ desktop_background_changed_cb (GConfClient *client,
       else
         priv->scaled_background = FALSE;
     }
+#endif
 }
 
 static void
@@ -2801,7 +2806,9 @@ desktop_background_init (MutterPlugin *plugin)
    * Read the background via our notify func
    */
   gconf_client_notify (priv->gconf_client, KEY_BG_FILENAME);
+#if 0
   gconf_client_notify (priv->gconf_client, KEY_BG_OPTIONS);
+#endif
 }
 
 /*
