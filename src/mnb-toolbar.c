@@ -285,6 +285,7 @@ struct _MnbToolbarPrivate
   guint            waiting_for_panel_show_cb_id;
   guint            waiting_for_panel_hide_cb_id;
   guint            panel_stub_timeout_id;
+  guint            trigger_cb_id;
 };
 
 static void
@@ -2806,10 +2807,11 @@ mnb_toolbar_constructed (GObject *self)
    * toolbar as required.
    */
   if (netbook_mode)
-    g_signal_connect (mutter_plugin_get_stage (MUTTER_PLUGIN (plugin)),
-                      "captured-event",
-                      G_CALLBACK (mnb_toolbar_stage_captured_cb),
-                      self);
+    priv->trigger_cb_id =
+      g_signal_connect (mutter_plugin_get_stage (MUTTER_PLUGIN (plugin)),
+                        "captured-event",
+                        G_CALLBACK (mnb_toolbar_stage_captured_cb),
+                        self);
 
   g_signal_connect (mutter_plugin_get_stage (plugin),
                     "button-press-event",
@@ -3308,6 +3310,25 @@ mnb_toolbar_ensure_size_for_screen (MnbToolbar *toolbar)
       priv->old_screen_height == screen_height)
     {
       return;
+    }
+
+  /*
+   * Ensure that the handler for showing Toolbar in small-screen mode is
+   * (dis)connected as appropriate.
+   */
+  if (netbook_mode && !priv->trigger_cb_id)
+    {
+      priv->trigger_cb_id =
+        g_signal_connect (mutter_plugin_get_stage (priv->plugin),
+                          "captured-event",
+                          G_CALLBACK (mnb_toolbar_stage_captured_cb),
+                          toolbar);
+    }
+  else if (!netbook_mode && priv->trigger_cb_id)
+    {
+      g_signal_handler_disconnect (mutter_plugin_get_stage (priv->plugin),
+                                   priv->trigger_cb_id);
+      priv->trigger_cb_id = 0;
     }
 
   /*
