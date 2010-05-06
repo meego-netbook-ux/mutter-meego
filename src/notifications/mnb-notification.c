@@ -383,7 +383,7 @@ mnb_notification_update (MnbNotification *notification,
                                       priv->icon);
       clutter_container_child_set (CLUTTER_CONTAINER (priv->title_box),
                                    CLUTTER_ACTOR (priv->summary),
-                                   "col", 0,
+                                   "column", 0,
                                    NULL);
     }
   else if (!no_icon && !clutter_actor_get_parent (priv->icon))
@@ -399,7 +399,7 @@ mnb_notification_update (MnbNotification *notification,
                                    NULL);
       clutter_container_child_set (CLUTTER_CONTAINER (priv->title_box),
                                    CLUTTER_ACTOR (priv->summary),
-                                   "col", 1,
+                                   "column", 1,
                                    NULL);
     }
 
