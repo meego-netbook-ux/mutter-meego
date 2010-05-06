@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-03 09:24+0000\n"
+"POT-Creation-Date: 2010-05-05 09:27+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: \n"
@@ -22,15 +22,15 @@ msgstr "設定您的工具列偏好設定"
 msgid "Toolbar settings"
 msgstr "工具列設定"
 
-#: ../capplet/src/mtp-bin.c:361
+#: ../capplet/src/mtp-bin.c:362
 msgid "Save toolbar"
 msgstr "儲存工具列"
 
-#: ../capplet/src/mtp-bin.c:366
+#: ../capplet/src/mtp-bin.c:367
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
 msgstr "很抱歉，在您加入新面板之前，必須先移除一個面板。"
 
-#: ../capplet/src/mtp-jar.c:109
+#: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
 msgstr "可用的面板"
 
@@ -39,7 +39,7 @@ msgstr "可用的面板"
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
 #. 
-#: ../capplet/src/mtp-clock.c:216 ../src/mnb-toolbar-clock.c:114
+#: ../capplet/src/mtp-clock.c:217 ../src/mnb-toolbar-clock.c:125
 msgid "%H:%M"
 msgstr "%H:%M"
 
@@ -53,7 +53,7 @@ msgstr "%H:%M"
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
 #. 
-#: ../capplet/src/mtp-clock.c:226 ../src/mnb-toolbar-clock.c:123
+#: ../capplet/src/mtp-clock.c:227 ../src/mnb-toolbar-clock.c:134
 msgid "%l:%M %P"
 msgstr "%l:%M %P"
 
@@ -61,7 +61,7 @@ msgstr "%l:%M %P"
 #. * For availabe format specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
 #. 
-#: ../capplet/src/mtp-clock.c:248 ../src/mnb-toolbar-clock.c:144
+#: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
 msgstr "%Y年%b%e日"
 
@@ -74,66 +74,73 @@ msgid "Set your system-tray preferences"
 msgstr "設定您的系統匣偏好設定"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:253
+#: ../capplet/src/syst-cc-panel.c:241
 msgid "System Tray"
-msgstr "系統匣昨天"
-
-#: ../capplet/src/syst-cc-panel.c:170
-msgid "System tray"
 msgstr "系統匣"
 
-#: ../capplet/src/syst-cc-panel.c:186
+#: ../capplet/src/syst-cc-panel.c:174
 msgid "Show system tray"
 msgstr "顯示系統匣"
 
-#: ../capplet/src/syst-cc-panel.c:207
-msgid "The system tray is a concept used by some, older, applications to let you know when something happens or to stay running when you close them."
-msgstr "系統匣是種某些舊一代應用程式所使用的概念，它能讓您瞭解什麼時候應用程式發生什麼事；或是當您關閉應用程式後，讓它們繼續在系統匣內保持執行。"
-
 #: ../data/mutter-moblin.schemas.in.h:1
+msgid "Always use small screen mode"
+msgstr "總是使用小螢幕模式"
+
+#: ../data/mutter-moblin.schemas.in.h:2
 msgid "Determines the order of panels on the toolbar."
 msgstr "決定工具列上的面板順序。"
 
-#: ../data/mutter-moblin.schemas.in.h:2
+#: ../data/mutter-moblin.schemas.in.h:3
+msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
+msgstr "即使畫面顯示大小需要用到更大的螢幕模式，也強迫它使用小螢幕模式。"
+
+#: ../data/mutter-moblin.schemas.in.h:4
 msgid "Order of panels on toolbar"
 msgstr "工具列上的面板順序"
 
-#: ../src/moblin-netbook.c:905
+#: ../src/moblin-netbook.c:1018
 msgid "Moblin Netbook Effects"
 msgstr "Moblin 網路筆電特效"
 
-#: ../src/moblin-netbook.c:909
+#: ../src/moblin-netbook.c:1022
 msgid "Effects for Moblin Netbooks"
 msgstr "給 Moblin 網路筆電用的特效"
 
-#: ../src/moblin-netbook.c:3035
+#: ../src/moblin-netbook.c:3218
 msgid "Activate"
 msgstr "啟動"
 
-#: ../src/moblin-netbook.c:3049
+#: ../src/moblin-netbook.c:3232
 msgid "Unknown window"
 msgstr "未知的視窗"
 
-#: ../src/moblin-netbook.c:3051
-msgid "Is asking for your attention."
-msgstr "正在要求您的注意。"
-
-#: ../src/mnb-toolbar.c:976
+#: ../src/mnb-toolbar.c:1000
 #, c-format
 msgid "Sorry, %s is broken"
 msgstr "抱歉，%s 已損毀"
 
-#: ../src/notifications/mnb-notification.c:262
+#: ../src/notifications/mnb-notification.c:282
 msgid "Dismiss"
 msgstr "取消"
 
-#: ../src/notifications/mnb-notification-cluster.c:668
+#: ../src/notifications/mnb-notification-cluster.c:663
 msgid "Dismiss All"
 msgstr "取消所有"
 
-#: ../capplet/src/mtp-bin.c:368
-msgid "You can add, remove and reorder many of the panels in your toolbar."
-msgstr "您可以加入、移除，以及重新排序您的工具列中的多個面板。"
+#: ../src/moblin-netbook.c:3234
+msgid "is asking for your attention."
+msgstr "正在要求您的注意。"
+
+#: ../capplet/src/mtp-bin.c:369
+msgid "You can add, remove, and reorder many of the panels in your toolbar."
+msgstr "您可以新增、刪除，以及重新排序您的工具列中的多個面板。"
+
+#: ../capplet/src/syst-cc-panel.c:195
+msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
+msgstr "系統匣是種某些舊一代應用程式所使用的概念，它能讓您瞭解什麼時候應用程式發生什麼事；或是當您關閉應用程式後，讓它們繼續在系統匣內保持執行。"
+
+#~ msgid "System tray"
+#~ msgstr "系統匣"
 
 #~ msgid "Socket for embedding"
 #~ msgstr "用來內嵌的 socket"
