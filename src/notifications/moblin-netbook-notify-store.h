@@ -37,6 +37,7 @@ typedef struct {
   gint  timeout_ms;
   GHashTable *actions;
   gboolean    is_urgent;
+  gboolean    no_dismiss_button;
 
   gpointer internal_data;
   GdkPixbuf *icon_pixbuf;

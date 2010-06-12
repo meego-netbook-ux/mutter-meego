@@ -169,6 +169,10 @@ notification_manager_notify (MoblinNetbookNotifyStore  *notify,
       notification->is_urgent =
         (val && g_value_get_uchar(val) == 2) ? TRUE : FALSE;
 
+      val = g_hash_table_lookup (hints, "meego-no-dismiss");
+      notification->no_dismiss_button =
+        (val && g_value_get_uchar (val) > 0) ? TRUE : FALSE;
+
       val = g_hash_table_lookup (hints, "icon_data");
       if (val && G_VALUE_HOLDS (val, G_TYPE_VALUE_ARRAY))
         {
@@ -294,14 +298,15 @@ notification_manager_get_capabilities (MoblinNetbookNotifyStore   *notify,
 				       gchar                    ***caps,
                                        GError                     *error)
 {
-  *caps = g_new0 (gchar *, 6);
+  *caps = g_new0 (gchar *, 7);
 
   (*caps)[0] = g_strdup ("body");
   (*caps)[1] = g_strdup ("body-markup");
   (*caps)[2] = g_strdup ("summary");
   (*caps)[3] = g_strdup ("icon-static");
   (*caps)[4] = g_strdup ("actions");
-  (*caps)[5] = NULL;
+  (*caps)[5] = g_strdup ("meego-no-dismiss");
+  (*caps)[6] = NULL;
 
   return TRUE;
 }

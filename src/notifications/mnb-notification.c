@@ -423,8 +423,9 @@ mnb_notification_update (MnbNotification *notification,
                                             CLUTTER_ACTOR (l->data));
         }
 
-      clutter_container_add_actor (CLUTTER_CONTAINER (priv->button_box),
-                                   priv->dismiss_button);
+      if (!details->no_dismiss_button)
+        clutter_container_add_actor (CLUTTER_CONTAINER (priv->button_box),
+                                     priv->dismiss_button);
       g_object_unref (priv->dismiss_button);
 
       if (priv->shortcuts)
