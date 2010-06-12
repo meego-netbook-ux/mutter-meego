@@ -405,7 +405,7 @@ mnb_notification_update (MnbNotification *notification,
 
   if (details->actions)
     {
-      GHashTableIter iter;
+      GList *action;
       gchar *key, *value;
 
       /*
@@ -434,9 +434,17 @@ mnb_notification_update (MnbNotification *notification,
           priv->shortcuts = NULL;
         }
 
-      g_hash_table_iter_init (&iter, details->actions);
-      while (g_hash_table_iter_next (&iter, (gpointer)&key, (gpointer)&value))
+      for (action = details->actions; action;)
         {
+          /*
+           * The action list length is
+           * guaranteed to be % 2 and > 0
+           */
+          key = action->data;
+          action = g_list_next (action);
+          value = action->data;
+          action = g_list_next (action);
+
           if (strcasecmp(key, "default") != 0)
             {
               ActionData *data;

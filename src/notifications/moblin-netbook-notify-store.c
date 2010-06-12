@@ -74,10 +74,15 @@ find_notification (MoblinNetbookNotifyStore  *notify,
 static void
 free_notification (Notification *n)
 {
+  GList *action;
+
   g_free (n->summary);
   g_free (n->body);
   g_free (n->icon_name);
-  g_hash_table_destroy (n->actions);
+
+  for (action = n->actions; action; action = g_list_next (action))
+    g_free (action->data);
+  g_list_free (n->actions);
 
   if (n->icon_pixbuf)
     g_object_unref (n->icon_pixbuf);
@@ -101,6 +106,7 @@ get_notification (MoblinNetbookNotifyStore *notify,
 {
   MoblinNetbookNotifyStorePrivate *priv = GET_PRIVATE (notify);
   Notification                    *notification;
+  GList                           *action;
 
   if (find_notification (notify, id, &notification))
     {
@@ -114,7 +120,10 @@ get_notification (MoblinNetbookNotifyStore *notify,
       g_free (notification->icon_name);
       notification->icon_name = NULL;
 
-      g_hash_table_remove_all (notification->actions);
+      for (action = notification->actions; action; action = g_list_next (action))
+        g_free (action->data);
+      g_list_free (notification->actions);
+      notification->actions = NULL;
     }
   else
     {
@@ -122,11 +131,7 @@ get_notification (MoblinNetbookNotifyStore *notify,
        */
       notification = g_slice_new0 (Notification);
       notification->id = get_next_id (notify);
-      notification->actions = g_hash_table_new_full (NULL,
-                                                     NULL,
-                                                     g_free,
-                                                     g_free);
-
+      notification->actions = NULL;
       notification->internal_data = internal_data;
 
       /* TODO: use _insert_sorted with some magic sorting algorithm */
@@ -222,11 +227,12 @@ notification_manager_notify (MoblinNetbookNotifyStore  *notify,
       const gchar *label = actions[i + 1];
 
       if (label == NULL || actions[i] == NULL)
-	continue;
+        continue;
 
-      g_hash_table_insert (notification->actions,
-			   g_strdup (actions[i]),
-			   g_strdup (label));
+      notification->actions = g_list_append (
+        notification->actions, g_strdup (actions[i]));
+      notification->actions = g_list_append (
+        notification->actions, g_strdup (label));
     }
 
   /* A timeout of -1 means implementation defined */
