@@ -214,6 +214,7 @@ src/effects/Makefile
 src/alttab/Makefile
 src/notifications/Makefile
 src/presence/Makefile
+src/systray/Makefile
 po/Makefile.in
 tests/Makefile
 libmeego-panel/Makefile

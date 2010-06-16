@@ -1,4 +1,4 @@
-SUBDIRS=effects alttab notifications presence
+SUBDIRS=effects alttab notifications systray presence
 
 xmldir = $(pkgdatadir)/dbus-xml
 xml_DATA = 	mnb-panel-dbus.xml	\
@@ -115,7 +115,8 @@ meego_netbook_la_LIBADD   = @MUTTER_PLUGIN_LIBS@	\
 				effects/libeffects.la	\
 				alttab/libalttab.la	\
 				presence/libpresence.la	\
-				notifications/libnotifications.la
+				notifications/libnotifications.la \
+				systray/libsystray.la
 
 pkglib_LTLIBRARIES = meego-netbook.la
 
