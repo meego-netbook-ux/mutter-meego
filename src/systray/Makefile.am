@@ -54,7 +54,9 @@ libsystray_la_SOURCES =	$(BUILT_SOURCES)		\
 			tray/na-tray-child.h		\
 			tray/na-tray-child.c		\
 			tray/na-tray-manager.h		\
-			tray/na-tray-manager.c
+			tray/na-tray-manager.c		\
+			mnb-systray.h			\
+			mnb-systray.c
 
 libsystray_la_CPPFLAGS = $(systray_cflags)
 libsystray_la_LDFLAGS = $(LDADD)
