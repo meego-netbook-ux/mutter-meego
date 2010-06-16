@@ -27,6 +27,8 @@
 
 #include "../meego-netbook.h"
 #include "../mnb-input-manager.h"
+#include "../systray/mnb-systray.h"
+
 #include "ntf-overlay.h"
 #include "ntf-libnotify.h"
 #include "ntf-wm.h"
@@ -144,6 +146,7 @@ struct _NtfOverlayPrivate
   NtfTray      *tray_normal;
   NtfTray      *tray_urgent;
   ClutterActor *lowlight;
+  ClutterActor *systray;
 
   gulong        stage_allocation_id;
 
@@ -175,6 +178,9 @@ ntf_overlay_paint (ClutterActor *actor)
 
   if (CLUTTER_ACTOR_IS_MAPPED (priv->tray_urgent))
     clutter_actor_paint (CLUTTER_ACTOR(priv->tray_urgent));
+
+  if (CLUTTER_ACTOR_IS_MAPPED (priv->systray))
+    clutter_actor_paint (CLUTTER_ACTOR(priv->systray));
 }
 
 static void
@@ -188,11 +194,15 @@ ntf_overlay_pick (ClutterActor *actor, const ClutterColor *color)
 static void
 ntf_overlay_map (ClutterActor *actor)
 {
+  NtfOverlayPrivate *priv = NTF_OVERLAY (actor)->priv;
+
   CLUTTER_ACTOR_CLASS (ntf_overlay_parent_class)->map (actor);
 
   /*
    * We do not map any children here, since they are not initially visible.
    */
+
+  clutter_actor_map (priv->systray);
 }
 
 static void
@@ -255,6 +265,7 @@ ntf_overlay_allocate (ClutterActor          *actor,
   ClutterActor      *tna = CLUTTER_ACTOR (priv->tray_normal);
   ClutterActor      *tua = CLUTTER_ACTOR (priv->tray_urgent);
   ClutterActor      *lowlight = priv->lowlight;
+  ClutterActor      *systray = priv->systray;
 
   klass = CLUTTER_ACTOR_CLASS (ntf_overlay_parent_class);
 
@@ -262,6 +273,23 @@ ntf_overlay_allocate (ClutterActor          *actor,
 
   my_width  = box->x2 - box->x1;
   my_height = box->y2 - box->y1;
+
+  {
+    ClutterActorBox tray_box;
+    gfloat p_width, p_height, m_width, m_height;
+
+    clutter_actor_get_preferred_width  (systray, -1.0, &m_width, &p_width);
+    clutter_actor_get_preferred_height (systray, p_width, &m_height, &p_height);
+
+    tray_box.x1 = my_width  - p_width;
+    tray_box.y1 = my_height - p_height;
+    tray_box.x2 = tray_box.x1 + p_width;
+    tray_box.y2 = tray_box.y1 + p_height;
+
+    clutter_actor_allocate (systray, &tray_box, flags);
+
+    my_height -= p_height;
+  }
 
   {
     ClutterActorBox tray_box;
@@ -448,6 +476,9 @@ ntf_overlay_constructed (GObject *object)
   g_signal_connect (priv->lowlight, "button-release-event",
                     G_CALLBACK (ntf_overlay_lowlight_button_event_cb),
                     self);
+
+  priv->systray = mnb_systray_new ();
+  clutter_actor_set_parent (priv->systray, actor);
 }
 
 static void
@@ -481,6 +512,7 @@ ntf_overlay_dispose (GObject *object)
   clutter_actor_destroy (priv->lowlight);
   clutter_actor_destroy (CLUTTER_ACTOR (priv->tray_normal));
   clutter_actor_destroy (CLUTTER_ACTOR (priv->tray_urgent));
+  clutter_actor_destroy (priv->systray);
 
   G_OBJECT_CLASS (ntf_overlay_parent_class)->dispose (object);
 }
