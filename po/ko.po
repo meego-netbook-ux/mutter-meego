@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-17 09:33+0000\n"
+"POT-Creation-Date: 2010-06-30 09:20+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: GLSKOR_SunKim <sunx.kim@intel.com>\n"
 "Language-Team: \n"
@@ -36,7 +36,7 @@ msgstr "툴바의 패널을 추가, 제거, 재정렬할 수 있습니다. "
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
-msgstr "사용 가능한 패널"
+msgstr "사용 가능 패널"
 
 #. translators: translate this to a suitable 24 hourt time format for
 #. * your locale showing only hours and minutes. For available format
@@ -109,23 +109,23 @@ msgstr "보여지는 사이즈가 일반적으로 크게 보이는 화면 모드
 msgid "Order of panels on toolbar"
 msgstr "툴바의 패널 순서"
 
-#: ../src/moblin-netbook.c:1016
+#: ../src/moblin-netbook.c:1020
 msgid "Moblin Netbook Effects"
 msgstr "Moblin 넷북 영향"
 
-#: ../src/moblin-netbook.c:1020
+#: ../src/moblin-netbook.c:1024
 msgid "Effects for Moblin Netbooks"
 msgstr "Moblin 넷북의 영향"
 
-#: ../src/moblin-netbook.c:3231
+#: ../src/moblin-netbook.c:3233
 msgid "Activate"
 msgstr "활성화"
 
-#: ../src/moblin-netbook.c:3245
+#: ../src/moblin-netbook.c:3247
 msgid "Unknown window"
 msgstr "알수 없는 창"
 
-#: ../src/moblin-netbook.c:3247
+#: ../src/moblin-netbook.c:3249
 msgid "is asking for your attention."
 msgstr "주의를 기울여 주시길 바랍니다."
 
@@ -134,7 +134,7 @@ msgstr "주의를 기울여 주시길 바랍니다."
 msgid "Sorry, %s is broken"
 msgstr "죄송합니다만 %s이(가) 고장났습니다."
 
-#: ../src/notifications/mnb-notification.c:282
+#: ../src/notifications/mnb-notification.c:272
 msgid "Dismiss"
 msgstr "해제"
 
