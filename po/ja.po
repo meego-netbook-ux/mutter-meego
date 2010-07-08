@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-05 09:27+0000\n"
+"POT-Creation-Date: 2010-07-07 09:17+0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: GLSJPN_Yukari <yukarix.yamashita@intel.com>\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +27,7 @@ msgstr "ツールバーの保存"
 
 #: ../capplet/src/mtp-bin.c:367
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "パネルを 1 つ追加するには、パネルを 1 つ削除する必要があります。"
+msgstr "パネルを追加する前に、パネルを 1 つ外してください。"
 
 #: ../capplet/src/mtp-bin.c:369
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
@@ -108,77 +108,94 @@ msgstr "ディスプレイ サイズが大きなスクリーンモードを通�
 msgid "Order of panels on toolbar"
 msgstr "ツールバー上のパネルの順番"
 
-#: ../src/moblin-netbook.c:1018
+#: ../src/moblin-netbook.c:1020
 msgid "Moblin Netbook Effects"
 msgstr "Moblin ネットブックのエフェクター"
 
-#: ../src/moblin-netbook.c:1022
+#: ../src/moblin-netbook.c:1024
 msgid "Effects for Moblin Netbooks"
 msgstr "Moblin ネットブックのエフェクター"
 
-#: ../src/moblin-netbook.c:3218
+#: ../src/moblin-netbook.c:3233
 msgid "Activate"
 msgstr "有効にする"
 
-#: ../src/moblin-netbook.c:3232
+#: ../src/moblin-netbook.c:3247
 msgid "Unknown window"
 msgstr "不明なウィンドウ"
 
-#: ../src/moblin-netbook.c:3234
+#: ../src/moblin-netbook.c:3249
 msgid "is asking for your attention."
 msgstr "呼びかけてます。"
 
-#: ../src/mnb-toolbar.c:1000
+#: ../src/mnb-toolbar.c:1007
 #, c-format
 msgid "Sorry, %s is broken"
 msgstr "%s は壊れています"
 
-#: ../src/notifications/mnb-notification.c:282
+#: ../src/notifications/mnb-notification.c:272
 msgid "Dismiss"
 msgstr "閉じる"
 
-#: ../src/notifications/mnb-notification-cluster.c:663
+#: ../src/notifications/mnb-notification-cluster.c:682
 msgid "Dismiss All"
 msgstr "すべて閉じる"
 
 #~ msgid "System tray"
 #~ msgstr "システム・トレイ"
+
 #~ msgid "Less than a minute ago"
 #~ msgstr "1分以内"
+
 #~ msgid "A few minutes ago"
 #~ msgstr "数分前"
+
 #~ msgid "A couple of hours ago"
 #~ msgstr "数時間前"
+
 #~ msgid "Earlier today"
 #~ msgstr "今日"
+
 #~ msgid "On %A"
 #~ msgstr "%A"
+
 #~ msgid "Last week"
 #~ msgstr "先週"
+
 #~ msgid "A couple of weeks ago"
 #~ msgstr "数週間前"
+
 #~ msgid "This month"
 #~ msgstr "今月"
+
 #~ msgid "Last month"
 #~ msgstr "先月"
+
 #~ msgid "This year"
 #~ msgstr "今年"
+
 #~ msgid "Last year"
 #~ msgstr "去年"
+
 #~ msgid "Ages ago"
 #~ msgstr "ずいぶんと前"
+
 #~ msgid "zones"
 #~ msgstr "ゾーン"
+
 #~ msgid "No Zones yet"
 #~ msgstr "ゾーンはありません"
+
 #~ msgid ""
 #~ "Applications you’re using will show up here. You will be able to switch "
 #~ "and organize them to your heart's content."
 #~ msgstr ""
 #~ "ここには使用中のアプリケーションが表示されます。よく使うコンテンツの切り替"
 #~ "えや整理をすることができます。"
+
 #~ msgid "No applications on this zone"
 #~ msgstr "このゾーンにはアプリケーションがありません"
+
 #~ msgid ""
 #~ "You need to play some music, look at some pictures or watch some video to "
 #~ "see your history here. In the meantime, you could take a look at some "
@@ -186,84 +203,119 @@ msgstr "すべて閉じる"
 #~ msgstr ""
 #~ "閲覧履歴は、写真の表示後や、音楽・ビデオの再生後に表示されます。表示される"
 #~ "まで、サンプルメディアをお楽しみください。"
+
 #~ msgid "Recently played"
 #~ msgstr "最近再生したファイル"
+
 #~ msgid "Search results"
 #~ msgstr "検索結果"
+
 #~ msgid "Playqueue"
 #~ msgstr "プレイキュー"
+
 #~ msgid "Season %u, Episode %u"
 #~ msgstr "シーズン %u、エピソード %u"
+
 #~ msgid "Previous"
 #~ msgstr "戻る"
+
 #~ msgid "Next"
 #~ msgstr "次へ"
+
 #~ msgid "Media"
 #~ msgstr "メディア"
+
 #~ msgid "Search"
 #~ msgstr "検索"
+
 #~ msgid "Season %d Episode %d"
 #~ msgstr "シーズン %d、エピソード %d"
+
 #~ msgid "Season %d"
 #~ msgstr "シーズン %d"
+
 #~ msgid "Episode %d"
 #~ msgstr "エピソード %d"
+
 #~ msgid "Year %d"
 #~ msgstr "%d年"
+
 #~ msgid "media"
 #~ msgstr "メディア"
+
 #~ msgid "Favourite Applications"
 #~ msgstr "お気に入りのアプリケーション"
+
 #~ msgid "Applications"
 #~ msgstr "アプリケーション"
+
 #~ msgid "applications"
 #~ msgstr "アプリケーション"
+
 #~ msgid ""
 #~ "As you visit web pages, your favorites will appear here and on the New "
 #~ "tab page in the browser."
 #~ msgstr ""
 #~ "Web ページを表示すると、お気に入りのページが、こことブラウザーの新規タブペ"
 #~ "インに表示されます。"
+
 #~ msgid "Untitled"
 #~ msgstr "無題"
+
 #~ msgid "New tab"
 #~ msgstr "新規タブ"
+
 #~ msgid "Internet"
 #~ msgstr "インターネット"
+
 #~ msgid "Go"
 #~ msgstr "GO"
+
 #~ msgid "Tabs"
 #~ msgstr "タブ"
+
 #~ msgid "Favorite pages"
 #~ msgstr "お気に入りのページ"
+
 #~ msgid "internet"
 #~ msgstr "インターネット"
+
 #~ msgid "Search for %%s on %s"
 #~ msgstr "%%s を %s で検索する"
+
 #~ msgid "Go to %s"
 #~ msgstr "%s にアクセス"
+
 #~ msgid "Copy"
 #~ msgstr "コピー"
+
 #~ msgid "the current selection to pasteboard"
 #~ msgstr "現在選択されているエントリーをペーストボードに追加"
+
 #~ msgid "your selection"
 #~ msgstr "選択"
+
 #~ msgid "Pasteboard"
 #~ msgstr "ペーストボード"
+
 #~ msgid "You need to copy some text to use Pasteboard"
 #~ msgstr "テキストをコピーして、ペーストボードを使用します"
+
 #~ msgid "Clear pasteboard"
 #~ msgstr "ペーストボードをクリアー"
+
 #~ msgid "pasteboard"
 #~ msgstr "ペーストボード"
+
 #~ msgid "<b>Appointments</b>"
 #~ msgstr "<b>スケジュール</b>"
+
 #~ msgid "No calendar entries this week"
 #~ msgstr "今週は何も予定が入っていません"
+
 #~ msgid ""
 #~ "Your friends' feeds and web services will appear here. Activate your "
 #~ "accounts now!"
 #~ msgstr ""
 #~ "アカウントを設定すると、ここにお友達のフィードと Web サービスが表示されま"
 #~ "す。"
-
