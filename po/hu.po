@@ -2,12 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: mutter-moblin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-26 06:43+0000\n"
+"POT-Creation-Date: 2010-08-31 18:51+0000\n"
 "PO-Revision-Date: 2010-01-22 10:50+0100\n"
 "Last-Translator: Gergely Lónyai <aleph@mandriva.org>\n"
 "Language-Team: Hungarian <aleph@mandriva.org>\n"
@@ -15,67 +15,159 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Hungarian\n"
-"X-Poedit-Country: HUNGARY\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: HUNGARY\n"
 
-#: ../src/moblin-netbook.c:462
-#: ../src/mnb-toolbar.c:1427
-msgid "zones"
-msgstr "zónák"
+#: ../capplet/data/moblin-toolbar-properties.desktop.in.h:1
+#, fuzzy
+msgid "Set your toolbar preferences"
+msgstr "Állítsa be eszköztár beállításait"
 
-#: ../src/moblin-netbook.c:575
-msgid "Moblin Netbook Effects"
-msgstr "Moblin Netbook Effektek"
+#: ../capplet/data/moblin-toolbar-properties.desktop.in.h:2
+#, fuzzy
+msgid "Toolbar settings"
+msgstr "Eszköztár beállítások"
 
-#: ../src/moblin-netbook.c:579
-msgid "Effects for Moblin Netbooks"
-msgstr "Effektek a Moblin Netbookokra"
+#: ../capplet/src/mtp-bin.c:362
+#, fuzzy
+msgid "Save toolbar"
+msgstr "Mentés eszköztár"
 
-#: ../src/moblin-netbook.c:2651
-msgid "Activate"
-msgstr "Aktiválás"
+#: ../capplet/src/mtp-bin.c:367
+#, fuzzy
+msgid "Sorry, you'll have to remove a panel before you can add a new one."
+msgstr "Sajnáljuk, el kell távolítania egy panelt, mielőtt egy újat hozzáadhat."
 
-#: ../src/moblin-netbook.c:2665
-msgid "Unknown window"
-msgstr "Ismeretlen ablak"
+#: ../capplet/src/mtp-bin.c:369
+#, fuzzy
+msgid "You can add, remove, and reorder many of the panels in your toolbar."
+msgstr "Felvehet, eltávolíthat és újrarendezhet sok a panelt az eszköztáron."
 
-#: ../src/moblin-netbook.c:2667
-msgid "Is asking for your attention."
-msgstr "Állíts be."
+#: ../capplet/src/mtp-jar.c:110
+#, fuzzy
+msgid "Available panels"
+msgstr "Rendelkezésre álló panelek"
 
-#. translators: translate this to a suitable time format for your locale
-#. * showing only hours and minutes. For available format specifiers see
+#. translators: translate this to a suitable 24 hourt time format for
+#. * your locale showing only hours and minutes. For available format
+#. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../src/mnb-toolbar.c:675
+#. 
+#: ../capplet/src/mtp-clock.c:217 ../src/mnb-toolbar-clock.c:125
+#, fuzzy
+msgid "%H:%M"
+msgstr "%l:%M %P"
+
+#. translators: translate this to a suitable time format for your
+#. * locale showing only hours and minutes. For available format
+#. * specifiers see
+#. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#. 
+#. translators: translate this to a suitable default time format for
+#. * your locale showing only hours and minutes. For available format
+#. * specifiers see
+#. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#. 
+#: ../capplet/src/mtp-clock.c:227 ../src/mnb-toolbar-clock.c:134
 msgid "%l:%M %P"
 msgstr "%l:%M %P"
 
 #. translators: translate this to a suitable date format for your locale.
 #. * For availabe format specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../src/mnb-toolbar.c:685
+#. 
+#: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
 msgstr "%Y. %b. %e."
 
-#: ../src/notifications/mnb-notification.c:262
+#: ../capplet/src/mtp-cc-panel.c:118
+#, fuzzy
+msgid "Toolbar"
+msgstr "Eszköztár"
+
+#: ../capplet/data/system-tray-properties.desktop.in.h:1
+#, fuzzy
+msgid "Set your system-tray preferences"
+msgstr "Állítsa be a tálca beállításait"
+
+#: ../capplet/data/system-tray-properties.desktop.in.h:2
+#: ../capplet/src/syst-cc-panel.c:241
+#, fuzzy
+msgid "System Tray"
+msgstr "Tálca"
+
+#: ../capplet/src/syst-cc-panel.c:174
+#, fuzzy
+msgid "Show system tray"
+msgstr "Mutassa a tálcát"
+
+#: ../capplet/src/syst-cc-panel.c:195
+#, fuzzy
+msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
+msgstr "A tálca egy koncepció, régebbi alkalmazások használják,  azért, hogy tudassák ha valami történik, illetve hogy fussnak akkor is, ha bezárja őket."
+
+#: ../data/mutter-moblin.schemas.in.h:1
+#, fuzzy
+msgid "Always use small screen mode"
+msgstr "Mindig használjon kis képernyős módot"
+
+#: ../data/mutter-moblin.schemas.in.h:2
+#, fuzzy
+msgid "Determines the order of panels on the toolbar."
+msgstr "Meghatározza. a panelek sorrendjét az eszköztáron."
+
+#: ../data/mutter-moblin.schemas.in.h:3
+#, fuzzy
+msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
+msgstr "Kis képernyős modot eröltet, akkor is ha a képernyő mérete eredetileg nagyobb képernyős módot diktálna"
+
+#: ../data/mutter-moblin.schemas.in.h:4
+#, fuzzy
+msgid "Order of panels on toolbar"
+msgstr "Panelek sorrendje az eszköztáron"
+
+#: ../src/moblin-netbook.c:1023
+msgid "Moblin Netbook Effects"
+msgstr "Moblin Netbook Effektek"
+
+#: ../src/moblin-netbook.c:1027
+msgid "Effects for Moblin Netbooks"
+msgstr "Effektek a Moblin Netbookokra"
+
+#: ../src/moblin-netbook.c:3236
+msgid "Activate"
+msgstr "Aktiválás"
+
+#: ../src/moblin-netbook.c:3250
+msgid "Unknown window"
+msgstr "Ismeretlen ablak"
+
+#: ../src/moblin-netbook.c:3252
+#, fuzzy
+msgid "is asking for your attention."
+msgstr "kéri a figyelmét."
+
+#: ../src/mnb-toolbar.c:1007
+#, c-format, fuzzy
+msgid "Sorry, %s is broken"
+msgstr "Elnézést, %s hibás"
+
+#: ../src/notifications/mnb-notification.c:272
 msgid "Dismiss"
 msgstr "Elutasít"
 
-#: ../src/notifications/mnb-notification-cluster.c:668
+#: ../src/notifications/mnb-notification-cluster.c:682
 msgid "Dismiss All"
 msgstr "MIndet elutasít"
 
-#: ../src/switcher/mnb-switcher.c:301
-msgid "No Zones yet"
-msgstr "Még nincsenek zónák"
+#~ msgid "zones"
+#~ msgstr "zónák"
 
-#: ../src/switcher/mnb-switcher.c:321
-msgid "Applications you’re using will show up here. You will be able to switch and organize them to your heart's content."
-msgstr "A használt alkalmazások itt jelennek meg. Itt tudsz átváltani köztük és kedved szerint szervezheted őket."
+#~ msgid "No Zones yet"
+#~ msgstr "Még nincsenek zónák"
 
-#: ../src/switcher/mnb-switcher-zone-apps.c:463
-msgid "No applications on this zone"
-msgstr "Nincs alkalmazás ebben a zónában"
+#~ msgid "Applications you’re using will show up here. You will be able to switch and organize them to your heart's content."
+#~ msgstr "A használt alkalmazások itt jelennek meg. Itt tudsz átváltani köztük és kedved szerint szervezheted őket."
 
+#~ msgid "No applications on this zone"
+#~ msgstr "Nincs alkalmazás ebben a zónában"
