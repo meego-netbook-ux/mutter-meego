@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-27 22:30+0000\n"
+"PO-Revision-Date: 2010-10-09 17:00+0000\n"
+"Last-Translator: Torgeir I. Hjelmfoss <tih@inbox.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Poedit-Language: Norwegian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../capplet/data/moblin-toolbar-properties.desktop.in.h:1
+msgid "Set your toolbar preferences"
+msgstr "Angi dine preferanser for verktøysfeltet"
+
+#: ../capplet/data/moblin-toolbar-properties.desktop.in.h:2
+msgid "Toolbar settings"
+msgstr "Verktøysfelt innstillinger"
+
+#: ../capplet/src/mtp-bin.c:362
+msgid "Save toolbar"
+msgstr "Lagre verktøysfelt"
+
+#: ../capplet/src/mtp-bin.c:367
+msgid "Sorry, you'll have to remove a panel before you can add a new one."
+msgstr "Beklager, du må fjerne et panel før du kan legge til et nytt."
+
+#: ../capplet/src/mtp-bin.c:369
+msgid "You can add, remove, and reorder many of the panels in your toolbar."
+msgstr "Du kan legge til, fjerne og omorganisere mange av panelene i verktøysfeltet."
+
+#: ../capplet/src/mtp-jar.c:110
+msgid "Available panels"
+msgstr "Tilgjengelige paneler"
+
+#. translators: translate this to a suitable 24 hourt time format for
+#. * your locale showing only hours and minutes. For available format
+#. * specifiers see
+#. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#.
+#: ../capplet/src/mtp-clock.c:217 ../src/mnb-toolbar-clock.c:125
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#. translators: translate this to a suitable time format for your
+#. * locale showing only hours and minutes. For available format
+#. * specifiers see
+#. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#.
+#. translators: translate this to a suitable default time format for
+#. * your locale showing only hours and minutes. For available format
+#. * specifiers see
+#. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#.
+#: ../capplet/src/mtp-clock.c:227 ../src/mnb-toolbar-clock.c:134
+msgid "%l:%M %P"
+msgstr "%l:%M %P"
+
+#. translators: translate this to a suitable date format for your locale.
+#. * For availabe format specifiers see
+#. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#.
+#: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
+msgid "%B %e, %Y"
+msgstr "%B %e, %Y"
+
+#: ../capplet/src/mtp-cc-panel.c:118
+msgid "Toolbar"
+msgstr "Verktøysfelt"
+
+#: ../capplet/data/system-tray-properties.desktop.in.h:1
+msgid "Set your system-tray preferences"
+msgstr "Sett dine preferanser for systemfeltet"
+
+#: ../capplet/data/system-tray-properties.desktop.in.h:2
+#: ../capplet/src/syst-cc-panel.c:241
+msgid "System Tray"
+msgstr "Systemfelt"
+
+#: ../capplet/src/syst-cc-panel.c:174
+msgid "Show system tray"
+msgstr "Vis systemfelt"
+
+#: ../capplet/src/syst-cc-panel.c:195
+msgid ""
+"The system tray is a concept used by some older applications to let you know "
+"when something happens or to stay running when you close them."
+msgstr ""
+"Systemfeltet er et konsept brukt av enkelte eldre applikasjoner "
+"for å gi deg beskjed hvis noe skjer eller la applikasjonene fortsette å kjøre "
+"i bakgrunnen etter at du har lukket dem."
+
+#: ../data/mutter-moblin.schemas.in.h:1
+msgid "Always use small screen mode"
+msgstr "Alltid bruk liten skjerm-modus"
+
+#: ../data/mutter-moblin.schemas.in.h:2
+msgid "Determines the order of panels on the toolbar."
+msgstr "Avgjør rekkefølgen av paneler i verktøyfeltet"
+
+#: ../data/mutter-moblin.schemas.in.h:3
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"Tvinger liten skjerm-modus til å bli brukt, selv om displaystørrelsen "
+"normalt skulle tilsi større skjerm-modus."
+
+#: ../data/mutter-moblin.schemas.in.h:4
+msgid "Order of panels on toolbar"
+msgstr "Rekkefølgen av paneler i verktøyfeltet"
+
+#: ../src/moblin-netbook.c:1023
+msgid "Moblin Netbook Effects"
+msgstr "Moblin netbookeffekter"
+
+#: ../src/moblin-netbook.c:1027
+msgid "Effects for Moblin Netbooks"
+msgstr "Effekter for Moblin-netbooks"
+
+#: ../src/moblin-netbook.c:3236
+msgid "Activate"
+msgstr "Aktiver"
+
+#: ../src/moblin-netbook.c:3250
+msgid "Unknown window"
+msgstr "Ukjent vindu"
+
+#: ../src/moblin-netbook.c:3252
+msgid "is asking for your attention."
+msgstr "spør etter din oppmerksomhet"
+
+#: ../src/mnb-toolbar.c:1007
+#, c-format
+msgid "Sorry, %s is broken"
+msgstr "Beklager, %s er ødelagt"
+
+#: ../src/notifications/mnb-notification.c:272
+msgid "Dismiss"
+msgstr "Forkast"
+
+#: ../src/notifications/mnb-notification-cluster.c:682
+msgid "Dismiss All"
+msgstr "Forkast alle"
