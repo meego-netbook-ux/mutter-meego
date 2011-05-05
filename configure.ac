@@ -93,6 +93,7 @@ AM_GCONF_SOURCE_2
 # Mutter-meego
 PKG_CHECK_MODULES(MUTTER_PLUGIN,
                   mutter-plugins >= mutter_version dnl
+                  libmutter >= mutter_version dnl
                   mx-1.0 >= 0.5.0                     dnl
                   libstartup-notification-1.0        dnl
                   gtk+-2.0                           dnl
