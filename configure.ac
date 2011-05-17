@@ -74,7 +74,7 @@ AM_GLIB_GNU_GETTEXT
 PKG_CHECK_MODULES(LIBMPL,
                   dbus-glib-1
                   mx-1.0 >= 1.1.11
-                  gtk+-2.0
+                  gtk+-3.0
                   gio-unix-2.0)
 
 MUTTER_MEEGO_THEME_DIR="${datadir}/${PACKAGE}/theme"
@@ -96,7 +96,7 @@ PKG_CHECK_MODULES(MUTTER_PLUGIN,
                   libmutter >= mutter_version dnl
                   mx-1.0 >= 0.5.0                     dnl
                   libstartup-notification-1.0        dnl
-                  gtk+-2.0                           dnl
+                  gtk+-3.0                           dnl
                   dbus-glib-1                        dnl
                   gconf-2.0
                   gio-unix-2.0
