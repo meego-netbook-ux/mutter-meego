@@ -824,7 +824,6 @@ meego_netbook_plugin_class_init (MeegoNetbookPluginClass *klass)
   plugin_class->kill_switch_workspace = kill_switch_workspace;
   plugin_class->plugin_info      = plugin_info;
   plugin_class->xevent_filter    = xevent_filter;
-  plugin_class->get_shadow       = meego_netbook_get_shadow;
   plugin_class->start            = meego_netbook_plugin_start;
 
   g_type_class_add_private (gobject_class, sizeof (MeegoNetbookPluginPrivate));
