@@ -20,7 +20,6 @@ dbus_h = 	$(srcdir)/$(DBUS_GLUE) 			\
 source_h =	$(srcdir)/marshal.h			\
 		$(srcdir)/../libmeego-panel/meego-panel/mpl-panel-common.h \
 		$(srcdir)/meego-netbook.h		\
-		$(srcdir)/meego-netbook-constraints.h	\
 		$(srcdir)/meego-netbook-mutter-hints.h	\
 		$(srcdir)/mnb-spinner.h			\
 		$(srcdir)/mnb-input-manager.h		\
@@ -36,7 +35,6 @@ source_h =	$(srcdir)/marshal.h			\
 
 source_c = 	$(srcdir)/mnb-enum-types.c		\
 		$(srcdir)/meego-netbook.c		\
-		$(srcdir)/meego-netbook-constraints.c	\
 		$(srcdir)/meego-netbook-mutter-hints.c	\
 		$(srcdir)/mnb-spinner.c			\
 		$(srcdir)/marshal.c                   	\
