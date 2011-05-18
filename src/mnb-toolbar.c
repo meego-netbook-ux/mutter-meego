@@ -33,9 +33,9 @@
 #include <dbus/dbus.h>
 #include <gconf/gconf-client.h>
 #include <meego-panel/mpl-panel-common.h>
-#include <display.h>
-#include <keybindings.h>
-#include <errors.h>
+#include <meta/display.h>
+#include <meta/keybindings.h>
+#include <meta/errors.h>
 
 /*
  * Including mutter's errors.h defines the i18n macros, so undefine them before
@@ -216,7 +216,7 @@ mnb_toolbar_panel_destroy (MnbToolbarPanel *tp)
 
 struct _MnbToolbarPrivate
 {
-  MutterPlugin *plugin;
+  MetaPlugin *plugin;
 
   ClutterActor *hbox; /* This is where all the contents are placed */
   ClutterActor *lowlight;
@@ -459,7 +459,7 @@ static gboolean
 mnb_toolbar_system_modal_state (MnbToolbar *toolbar)
 {
   MnbToolbarPrivate          *priv   = toolbar->priv;
-  MutterPlugin               *plugin = priv->plugin;
+  MetaPlugin                 *plugin = priv->plugin;
   MeegoNetbookPluginPrivate *ppriv  = MEEGO_NETBOOK_PLUGIN (plugin)->priv;
   MetaWindow                 *focus  = ppriv->last_focused;
 
@@ -614,12 +614,12 @@ static gboolean
 mnb_toolbar_check_for_windows (MnbToolbar *toolbar)
 {
   MnbToolbarPrivate *priv   = toolbar->priv;
-  MetaScreen        *screen = mutter_plugin_get_screen (priv->plugin);
+  MetaScreen        *screen = meta_plugin_get_screen (priv->plugin);
   GList             *l;
   gint               count = 0;
   gint               max_allowed = 0;
 
-  if (mutter_plugin_debug_mode (priv->plugin))
+  if (meta_plugin_debug_mode (priv->plugin))
     {
       /*
        * The don't hide panel/toolbar feature is an absolute PITA to debug
@@ -629,16 +629,17 @@ mnb_toolbar_check_for_windows (MnbToolbar *toolbar)
       max_allowed = 1;
     }
 
-  l = mutter_get_windows (screen);
+  l = meta_get_window_actors (screen);
 
   while (l)
     {
-      MutterWindow       *m    = l->data;
-      MetaCompWindowType  type = mutter_window_get_window_type (m);
+      MetaWindowActor    *m    = l->data;
+      MetaWindow         *mw   = meta_window_actor_get_meta_window (m);
+      MetaWindowType      type = meta_window_get_window_type (mw);
 
-      if (!(type == META_COMP_WINDOW_DOCK    ||
-            type == META_COMP_WINDOW_DESKTOP ||
-            mutter_window_is_override_redirect (m)))
+      if (!(type == META_WINDOW_DOCK    ||
+            type == META_WINDOW_DESKTOP ||
+            meta_window_actor_is_override_redirect (m)))
         {
           if (++count > max_allowed)
             return TRUE;
@@ -855,11 +856,11 @@ mnb_toolbar_class_init (MnbToolbarClass *klass)
   g_object_class_install_property (object_class,
                                    PROP_MUTTER_PLUGIN,
                                    g_param_spec_object ("mutter-plugin",
-                                                      "Mutter Plugin",
-                                                      "Mutter Plugin",
-                                                      MUTTER_TYPE_PLUGIN,
-                                                      G_PARAM_READWRITE |
-                                                      G_PARAM_CONSTRUCT_ONLY));
+                                                        "Mutter Plugin",
+                                                        "Mutter Plugin",
+                                                        META_TYPE_PLUGIN,
+                                                        G_PARAM_READWRITE |
+                                                        G_PARAM_CONSTRUCT_ONLY));
 
 
   /*
@@ -1026,7 +1027,7 @@ mnb_toolbar_show_pending_panel (MnbToolbar *toolbar, MnbToolbarPanel *tp)
   MnbToolbarPrivate *priv = toolbar->priv;
   gint               screen_width, screen_height;
 
-  mutter_plugin_query_screen_size (priv->plugin,
+  meta_plugin_query_screen_size (priv->plugin,
                                    &screen_width, &screen_height);
 
   clutter_actor_set_size (priv->panel_stub, screen_width, screen_height / 3);
@@ -1383,7 +1384,7 @@ mnb_toolbar_dropdown_show_completed_partial_cb (MnbPanel    *panel,
                                                 MnbToolbar  *toolbar)
 {
   MnbToolbarPrivate *priv = toolbar->priv;
-  MutterWindow      *mcw;
+  MetaWindowActor   *mcw;
 
   g_assert (MNB_IS_PANEL_OOP (panel));
 
@@ -1410,7 +1411,7 @@ static void
 mnb_toolbar_dropdown_hide_completed_cb (MnbPanel *panel, MnbToolbar  *toolbar)
 {
   MnbToolbarPrivate *priv = toolbar->priv;
-  MutterPlugin      *plugin = priv->plugin;
+  MetaPlugin        *plugin = priv->plugin;
   MnbPanel          *active;
 
   meego_netbook_stash_window_focus (plugin, CurrentTime);
@@ -1531,11 +1532,11 @@ mnb_toolbar_append_panel_builtin_internal (MnbToolbar      *toolbar,
       return;
     }
 
-  mutter_plugin_query_screen_size (plugin, &screen_width, &screen_height);
+  meta_plugin_query_screen_size (plugin, &screen_width, &screen_height);
 
   {
 #if 0
-      MetaScreen  *screen  = mutter_plugin_get_screen (plugin);
+      MetaScreen  *screen  = meta_plugin_get_screen (plugin);
       MetaDisplay *display = meta_screen_get_display (screen);
 
       panel = tp->panel = MNB_PANEL (mnb_switcher_new (plugin));
@@ -1952,7 +1953,7 @@ static void
 mnb_toolbar_ensure_applet_position (MnbToolbar *toolbar, MnbToolbarPanel *tp)
 {
   MnbToolbarPrivate *priv   = toolbar->priv;
-  MutterPlugin      *plugin = priv->plugin;
+  MetaPlugin        *plugin = priv->plugin;
   gint               screen_width, screen_height;
   ClutterActor      *button;
   gint               index;
@@ -1962,7 +1963,7 @@ mnb_toolbar_ensure_applet_position (MnbToolbar *toolbar, MnbToolbarPanel *tp)
 
   button = tp->button;
 
-  mutter_plugin_query_screen_size (plugin, &screen_width, &screen_height);
+  meta_plugin_query_screen_size (plugin, &screen_width, &screen_height);
 
   index = mnb_toolbar_get_applet_index (toolbar, tp);
 
@@ -2003,7 +2004,7 @@ static void
 mnb_toolbar_ensure_button_position (MnbToolbar *toolbar, MnbToolbarPanel *tp)
 {
   MnbToolbarPrivate *priv   = toolbar->priv;
-  MutterPlugin      *plugin = priv->plugin;
+  MetaPlugin        *plugin = priv->plugin;
   gint               screen_width, screen_height;
   ClutterActor      *button;
 
@@ -2012,7 +2013,7 @@ mnb_toolbar_ensure_button_position (MnbToolbar *toolbar, MnbToolbarPanel *tp)
 
   button = tp->button;
 
-  mutter_plugin_query_screen_size (plugin, &screen_width, &screen_height);
+  meta_plugin_query_screen_size (plugin, &screen_width, &screen_height);
 
   /*
    * The button size and positioning depends on whether this is a regular
@@ -2657,7 +2658,7 @@ static void
 mnb_toolbar_set_struts (MnbToolbar *toolbar)
 {
   MnbToolbarPrivate *priv         = toolbar->priv;
-  MutterPlugin      *plugin       = priv->plugin;
+  MetaPlugin        *plugin       = priv->plugin;
   gboolean           netbook_mode = meego_netbook_use_netbook_mode (plugin);
 
   /*
@@ -2679,7 +2680,7 @@ static void
 mnb_toolbar_constructed (GObject *self)
 {
   MnbToolbarPrivate *priv = MNB_TOOLBAR (self)->priv;
-  MutterPlugin      *plugin = priv->plugin;
+  MetaPlugin        *plugin = priv->plugin;
   ClutterActor      *actor = CLUTTER_ACTOR (self);
   ClutterActor      *hbox;
   ClutterActor      *lowlight, *panel_stub;
@@ -2688,8 +2689,8 @@ mnb_toolbar_constructed (GObject *self)
   gint               screen_width, screen_height;
   ClutterColor       low_clr = { 0, 0, 0, 0x7f };
   DBusGConnection   *conn;
-  MetaScreen        *screen = mutter_plugin_get_screen (plugin);
-  ClutterActor      *wgroup = mutter_get_window_group_for_screen (screen);
+  MetaScreen        *screen = meta_plugin_get_screen (plugin);
+  ClutterActor      *wgroup = meta_get_window_group_for_screen (screen);
   gboolean           netbook_mode = meego_netbook_use_netbook_mode (plugin);
 
   /*
@@ -2708,7 +2709,7 @@ mnb_toolbar_constructed (GObject *self)
       g_warning (G_STRLOC " DBus connection not available !!!");
     }
 
-  mutter_plugin_query_screen_size (plugin,
+  meta_plugin_query_screen_size (plugin,
                                    &priv->old_screen_width,
                                    &priv->old_screen_height);
 
@@ -2723,7 +2724,7 @@ mnb_toolbar_constructed (GObject *self)
   {
     MetaWorkspace *workspace = meta_screen_get_active_workspace (screen);
 
-    mutter_plugin_query_screen_size (plugin, &screen_width, &screen_height);
+    meta_plugin_query_screen_size (plugin, &screen_width, &screen_height);
 
     if (workspace)
       {
@@ -2810,12 +2811,12 @@ mnb_toolbar_constructed (GObject *self)
    */
   if (netbook_mode)
     priv->trigger_cb_id =
-      g_signal_connect (mutter_plugin_get_stage (MUTTER_PLUGIN (plugin)),
+      g_signal_connect (meta_plugin_get_stage (META_PLUGIN (plugin)),
                         "captured-event",
                         G_CALLBACK (mnb_toolbar_stage_captured_cb),
                         self);
 
-  g_signal_connect (mutter_plugin_get_stage (plugin),
+  g_signal_connect (meta_plugin_get_stage (plugin),
                     "button-press-event",
                     G_CALLBACK (mnb_toolbar_stage_input_cb),
                     self);
@@ -2827,7 +2828,7 @@ mnb_toolbar_constructed (GObject *self)
    * (We cannot set up the stage here, because the overlay window, etc.,
    * is not in place until the stage is shown.)
    */
-  g_signal_connect (mutter_plugin_get_stage (MUTTER_PLUGIN (plugin)),
+  g_signal_connect (meta_plugin_get_stage (META_PLUGIN (plugin)),
                     "show", G_CALLBACK (mnb_toolbar_stage_show_cb),
                     self);
 
@@ -2839,7 +2840,7 @@ mnb_toolbar_constructed (GObject *self)
 }
 
 ClutterActor*
-mnb_toolbar_new (MutterPlugin *plugin)
+mnb_toolbar_new (MetaPlugin *plugin)
 {
   return g_object_new (MNB_TYPE_TOOLBAR,
                        "mutter-plugin", plugin, NULL);
@@ -3053,10 +3054,10 @@ static void
 mnb_toolbar_trigger_region_set_height (MnbToolbar *toolbar, gint height)
 {
   MnbToolbarPrivate *priv = toolbar->priv;
-  MutterPlugin      *plugin = priv->plugin;
+  MetaPlugin        *plugin = priv->plugin;
   gint               screen_width, screen_height;
 
-  mutter_plugin_query_screen_size (plugin, &screen_width, &screen_height);
+  meta_plugin_query_screen_size (plugin, &screen_width, &screen_height);
 
   if (priv->trigger_region != NULL)
     mnb_input_manager_remove_region (priv->trigger_region);
@@ -3288,7 +3289,7 @@ static void
 mnb_toolbar_ensure_size_for_screen (MnbToolbar *toolbar)
 {
   MnbToolbarPrivate *priv      = toolbar->priv;
-  MetaScreen        *screen    = mutter_plugin_get_screen (priv->plugin);
+  MetaScreen        *screen    = meta_plugin_get_screen (priv->plugin);
   MetaWorkspace     *workspace = meta_screen_get_active_workspace (screen);
   gint               screen_width, screen_height;
   GList             *l;
@@ -3297,7 +3298,7 @@ mnb_toolbar_ensure_size_for_screen (MnbToolbar *toolbar)
 
   netbook_mode = meego_netbook_use_netbook_mode (priv->plugin);
 
-  mutter_plugin_query_screen_size (priv->plugin, &screen_width, &screen_height);
+  meta_plugin_query_screen_size (priv->plugin, &screen_width, &screen_height);
 
   if (workspace)
     {
@@ -3321,14 +3322,14 @@ mnb_toolbar_ensure_size_for_screen (MnbToolbar *toolbar)
   if (netbook_mode && !priv->trigger_cb_id)
     {
       priv->trigger_cb_id =
-        g_signal_connect (mutter_plugin_get_stage (priv->plugin),
+        g_signal_connect (meta_plugin_get_stage (priv->plugin),
                           "captured-event",
                           G_CALLBACK (mnb_toolbar_stage_captured_cb),
                           toolbar);
     }
   else if (!netbook_mode && priv->trigger_cb_id)
     {
-      g_signal_handler_disconnect (mutter_plugin_get_stage (priv->plugin),
+      g_signal_handler_disconnect (meta_plugin_get_stage (priv->plugin),
                                    priv->trigger_cb_id);
       priv->trigger_cb_id = 0;
     }
@@ -3344,7 +3345,7 @@ mnb_toolbar_ensure_size_for_screen (MnbToolbar *toolbar)
    */
   if (priv->old_screen_width != screen_width)
     {
-      MutterPlugin               *plugin = priv->plugin;
+      MetaPlugin                *plugin = priv->plugin;
       MeegoNetbookPluginPrivate *ppriv = MEEGO_NETBOOK_PLUGIN (plugin)->priv;
 
       width = screen_width;
@@ -3465,7 +3466,7 @@ static void
 mnb_toolbar_stage_show_cb (ClutterActor *stage, MnbToolbar *toolbar)
 {
   MnbToolbarPrivate *priv = toolbar->priv;
-  MutterPlugin      *plugin = priv->plugin;
+  MetaPlugin        *plugin = priv->plugin;
   XWindowAttributes  attr;
   long               event_mask;
   Window             xwin;
@@ -3474,9 +3475,9 @@ mnb_toolbar_stage_show_cb (ClutterActor *stage, MnbToolbar *toolbar)
   ClutterStage      *stg;
   MnbPanel          *myzone;
 
-  xdpy   = mutter_plugin_get_xdisplay (plugin);
-  stg    = CLUTTER_STAGE (mutter_plugin_get_stage (plugin));
-  screen = mutter_plugin_get_screen (plugin);
+  xdpy   = meta_plugin_get_xdisplay (plugin);
+  stg    = CLUTTER_STAGE (meta_plugin_get_stage (plugin));
+  screen = meta_plugin_get_screen (plugin);
 
   /*
    * Set up the stage input region
@@ -3497,7 +3498,7 @@ mnb_toolbar_stage_show_cb (ClutterActor *stage, MnbToolbar *toolbar)
 
   XSelectInput (xdpy, xwin, event_mask);
 
-  xwin = mutter_get_overlay_window (screen);
+  xwin = meta_get_overlay_window (screen);
   event_mask = EnterWindowMask | LeaveWindowMask;
 
   if (XGetWindowAttributes (xdpy, xwin, &attr))
@@ -3645,7 +3646,7 @@ mnb_toolbar_foreach_panel (MnbToolbar        *toolbar,
 }
 
 gboolean
-mnb_toolbar_owns_window (MnbToolbar *toolbar, MutterWindow *mcw)
+mnb_toolbar_owns_window (MnbToolbar *toolbar, MetaWindowActor *mcw)
 {
   MnbToolbarPrivate *priv  = toolbar->priv;
   GList             *l;
@@ -4057,7 +4058,7 @@ static void
 mnb_toolbar_load_gconf_settings (MnbToolbar *toolbar)
 {
   MnbToolbarPrivate          *priv   = toolbar->priv;
-  MutterPlugin               *plugin = priv->plugin;
+  MetaPlugin                 *plugin = priv->plugin;
   MeegoNetbookPluginPrivate *ppriv  = MEEGO_NETBOOK_PLUGIN (plugin)->priv;
   GConfClient                *client = ppriv->gconf_client;
   GSList                     *order;
@@ -4098,8 +4099,8 @@ static void
 mnb_toolbar_setup_gconf (MnbToolbar *toolbar)
 {
   MnbToolbarPrivate          *priv   = toolbar->priv;
-  MutterPlugin               *plugin = priv->plugin;
-  MeegoNetbookPluginPrivate *ppriv  = MEEGO_NETBOOK_PLUGIN (plugin)->priv;
+  MetaPlugin                 *plugin = priv->plugin;
+  MeegoNetbookPluginPrivate  *ppriv  = MEEGO_NETBOOK_PLUGIN (plugin)->priv;
   GConfClient                *client = ppriv->gconf_client;
   GError                     *error  = NULL;
 

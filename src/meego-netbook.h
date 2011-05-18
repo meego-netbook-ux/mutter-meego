@@ -26,7 +26,7 @@
 #define MEEGO_NETBOOK_H
 
 #include <gconf/gconf-client.h>
-#include <mutter-plugin.h>
+#include <meta/meta-plugin.h>
 #include <mx/mx.h>
 
 #define SN_API_NOT_YET_FROZEN 1
@@ -70,14 +70,14 @@ typedef struct _MeegoNetbookPluginPrivate MeegoNetbookPluginPrivate;
 
 struct _MeegoNetbookPlugin
 {
-  MutterPlugin parent;
+  MetaPlugin parent;
 
   MeegoNetbookPluginPrivate *priv;
 };
 
 struct _MeegoNetbookPluginClass
 {
-  MutterPluginClass parent_class;
+  MetaPluginClass parent_class;
 };
 
 
@@ -105,14 +105,14 @@ struct _MeegoNetbookPluginPrivate
   /* Background desktop texture */
   ClutterActor          *desktop_tex;
 
-  MutterPluginInfo       info;
+  MetaPluginInfo         info;
 
   Window                 focus_xwin;
 
   /* Desktop background stuff */
   GConfClient           *gconf_client;
 
-  MutterWindow          *screen_saver_mcw;
+  MetaWindowActor       *screen_saver_mcw;
 
   /* Presence manager */
   GsmPresence           *presence;
@@ -141,59 +141,59 @@ struct ActorPrivate
   gboolean      sn_in_progress : 1;
 };
 
-ActorPrivate * get_actor_private (MutterWindow *actor);
-void           meego_netbook_focus_stage (MutterPlugin *plugin,
-                                           guint32       timestamp);
+ActorPrivate * get_actor_private (MetaWindowActor *actor);
+void           meego_netbook_focus_stage (MetaPlugin *plugin,
+                                          guint32       timestamp);
 
-void           meego_netbook_unfocus_stage (MutterPlugin *plugin,
-                                             guint32 timestamp);
+void           meego_netbook_unfocus_stage (MetaPlugin *plugin,
+                                            guint32 timestamp);
 
-void meego_netbook_notify_init (MutterPlugin *plugin);
-
-void
-meego_netbook_stash_window_focus (MutterPlugin *plugin, guint32 timestamp);
+void meego_netbook_notify_init (MetaPlugin *plugin);
 
 void
-meego_netbook_unstash_window_focus (MutterPlugin *plugin, guint32 timestamp);
+meego_netbook_stash_window_focus (MetaPlugin *plugin, guint32 timestamp);
 
 void
-meego_netbook_setup_kbd_grabs (MutterPlugin *plugin);
+meego_netbook_unstash_window_focus (MetaPlugin *plugin, guint32 timestamp);
+
+void
+meego_netbook_setup_kbd_grabs (MetaPlugin *plugin);
 
 gboolean
-meego_netbook_fullscreen_apps_present (MutterPlugin *plugin);
+meego_netbook_fullscreen_apps_present (MetaPlugin *plugin);
 
-MutterPlugin *
+MetaPlugin *
 meego_netbook_get_plugin_singleton (void);
 
 gboolean
-meego_netbook_modal_windows_present (MutterPlugin *plugin, gint workspace);
+meego_netbook_modal_windows_present (MetaPlugin *plugin, gint workspace);
 
 gboolean
-meego_netbook_compositor_disabled (MutterPlugin *plugin);
+meego_netbook_compositor_disabled (MetaPlugin *plugin);
 
 void
 meego_netbook_activate_window (MetaWindow *window);
 
 ClutterActor *
-meego_netbook_get_toolbar (MutterPlugin *plugin);
+meego_netbook_get_toolbar (MetaPlugin *plugin);
 
 gboolean
-meego_netbook_activate_mutter_window (MutterWindow *mcw);
+meego_netbook_activate_mutter_window (MetaWindowActor *mcw);
 
 gboolean
-meego_netbook_use_netbook_mode (MutterPlugin *plugin);
+meego_netbook_use_netbook_mode (MetaPlugin *plugin);
 
 guint32
 meego_netbook_get_compositor_option_flags (void);
 
 gboolean
-meego_netbook_urgent_notification_present (MutterPlugin *plugin);
+meego_netbook_urgent_notification_present (MetaPlugin *plugin);
 
 void
-meego_netbook_set_struts (MutterPlugin *plugin,
-                           gint          left,
-                           gint          right,
-                           gint          top,
-                           gint          bottom);
+meego_netbook_set_struts (MetaPlugin *plugin,
+                          gint        left,
+                          gint        right,
+                          gint        top,
+                          gint        bottom);
 
 #endif
