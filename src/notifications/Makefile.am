@@ -10,8 +10,6 @@ libnotifications_la_SOURCES =				\
 			$(DBUS_GLUE) 			\
 			meego-netbook-notify-store.c   \
 			meego-netbook-notify-store.h   \
-			mnb-notification-gtk.c		\
-			mnb-notification-gtk.h		\
 			ntf-notification.c		\
 			ntf-notification.h		\
 			ntf-overlay.c			\

@@ -30,7 +30,6 @@
 #include "alttab/mnb-alttab-overlay.h"
 #include "mnb-toolbar.h"
 #include "effects/mnb-switch-zones-effect.h"
-#include "notifications/mnb-notification-gtk.h"
 #include "notifications/ntf-overlay.h"
 #include "presence/mnb-presence.h"
 #include "mnb-panel-frame.h"
@@ -1644,11 +1643,13 @@ meego_netbook_toggle_compositor (MutterPlugin *plugin, gboolean on)
     {
       priv->compositor_disabled = FALSE;
 
+#pragma TODO
+#if 0
       /*
        * Hide the gtk notification notifier if present
        */
       mnb_notification_gtk_hide ();
-
+#endif
       /*
        * Order matters; mapping the window before redirection seems to be
        * least visually disruptive. The fullscreen application is displayed
