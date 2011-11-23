@@ -10,11 +10,11 @@ msgstr ""
 "POT-Creation-Date: 2011-11-04 12:46+0000\n"
 "PO-Revision-Date: 2010-11-30 11:22+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Catalan (Valencian) (http://www.transifex.net/projects/p/meego/team/ca@valencia/)\n"
+"Language-Team: Bulgarian (http://www.transifex.net/projects/p/meego/team/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca@valencia\n"
+"Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
