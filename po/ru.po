@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Alexander Mineev <alexander.g.mineev@intel.com>, 2009.
 # 
+# Translators:
+#   <melentiev@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-03 11:52+0000\n"
-"PO-Revision-Date: 2010-07-01 13:32-0800\n"
-"Last-Translator: Bogdan Nosach <bogdan.nosach@ptiglobal.net>\n"
-"Language-Team: \n"
+"Project-Id-Version: mutter-meego\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-29 13:40+0000\n"
+"Last-Translator: GLS_Translator_RUS2 <melentiev@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.net/projects/p/meego/team/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Poedit-Language: Russian\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
@@ -26,17 +26,19 @@ msgstr "Настроить параметры панели инструмент�
 msgid "Toolbar settings"
 msgstr "Настройки панели инструментов"
 
-#: ../capplet/src/mtp-bin.c:362
+#: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
 msgstr "Сохранить панель инструментов"
 
-#: ../capplet/src/mtp-bin.c:367
+#: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
 msgstr "Перед добавлением новой панели инструментов удалите старую."
 
-#: ../capplet/src/mtp-bin.c:369
+#: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "Вы можете добавить, удалить или изменить положение многих панелей на своей панели инструментов."
+msgstr ""
+"Вы можете добавить, удалить или изменить положение многих панелей на своей "
+"панели инструментов."
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
@@ -82,17 +84,22 @@ msgid "Set your system-tray preferences"
 msgstr "Установить настройки области уведомлений"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:241
+#: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
 msgstr "Область уведомлений"
 
-#: ../capplet/src/syst-cc-panel.c:174
+#: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
 msgstr "Показать область уведомлений"
 
-#: ../capplet/src/syst-cc-panel.c:195
-msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
-msgstr "Область уведомлений используется некоторыми более старыми приложениями для информирования пользователя в случае возникновения какого-то события или продолжения работы после их закрытия."
+#: ../capplet/src/syst-cc-panel.c:200
+msgid ""
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
+msgstr ""
+"Область уведомлений используется некоторыми более старыми приложениями для "
+"информирования пользователя в случае возникновения какого-то события или "
+"продолжения работы после их закрытия."
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
@@ -103,57 +110,75 @@ msgid "Determines the order of panels on the toolbar."
 msgstr "Определяет порядок панелей на инструментальной панели."
 
 #: ../data/mutter-meego.schemas.in.h:3
-msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
-msgstr "Принуждает использовать малое разрешение экрана даже тогда, когда размер экрана подразумевает использование большого разрешения."
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"Принуждает использовать малое разрешение экрана даже тогда, когда размер "
+"экрана подразумевает использование большого разрешения."
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
 msgstr "Порядок панелей на инструментальной панели"
 
-#: ../src/meego-netbook.c:825
+#: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr "Эффекты Meego Netbook"
+msgstr "Эффекты для нетбуков Meego"
 
-#: ../src/meego-netbook.c:829
+#: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr "Эффекты для Meego Netbooks"
+msgstr "Эффекты для нетбуков Meego"
 
-#: ../src/mnb-toolbar.c:1007
+#: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
 msgstr "Извините, %s поврежден"
 
-#: ../src/notifications/ntf-notification.c:224
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "Пропустить"
 
-#: ../src/notifications/ntf-tray.c:308
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
 msgstr "Пропустить"
 
-#: ../src/notifications/ntf-wm.c:103
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
+#, c-format
+msgid "%i pending messages"
+msgstr "Неподтвержденные сообщения: %i"
+
+#: ../src/notifications/ntf-tray.c:570
+msgid "1 pending message"
+msgstr "1 неподтвержденное сообщение"
+
+#: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
 msgstr "Неизвестное окно"
 
-#: ../src/notifications/ntf-wm.c:107
+#: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
 msgstr "просит обратить внимание."
 
-#: ../src/notifications/ntf-wm.c:115
+#: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
 msgstr "Активировать"
 
-#~ msgid "System tray"
-#~ msgstr "Область уведомлений"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
+#, c-format
+msgid "Starting %s"
+msgstr "Запуск %s"
 
-#~ msgid "zones"
-#~ msgstr "зоны"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
+#, c-format
+msgid "Opening %s"
+msgstr "Открытие %s"
 
-#~ msgid "No Zones yet"
-#~ msgstr "Нет зон"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
+#, c-format
+msgid "Opening %d Item"
+msgid_plural "Opening %d Items"
+msgstr[0] "Открытие элемента: %d"
+msgstr[1] "Открытие элементов: %d"
+msgstr[2] "Открытие элементов: %d"
 
-#~ msgid "Applications you’re using will show up here. You will be able to switch and organize them to your heart's content."
-#~ msgstr "Программы, которые будут использоваться, появятся здесь.  Вы сможете переключать и упорядочить их."
 
-#~ msgid "No applications on this zone"
-#~ msgstr "Нет программ в этой зоне."

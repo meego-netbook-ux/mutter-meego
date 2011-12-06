@@ -1,80 +1,185 @@
-# Danish translation mutter-meego
-# Copyright (C) 2009
-# This file is distributed under the same license as the mutter-meego package.
-# Kris Thomsen <lakristho@gmail.com>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Kris Thomsen <lakristho@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mutter-meego\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-03 23:44+0000\n"
-"PO-Revision-Date: 2009-12-14 17:24+0100\n"
-"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
-"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-03 19:07+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Danish (http://www.transifex.net/projects/p/meego/team/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../src/meego-netbook.c:463 ../src/switcher/mnb-switcher.c:1247
-msgid "zones"
-msgstr "zoner"
+#: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
+msgid "Set your toolbar preferences"
+msgstr "Angiv indstillinger for din værktøjslinje"
 
-#: ../src/meego-netbook.c:621
-msgid "Meego Netbook Effects"
-msgstr "Meego Netbook-effekter"
+#: ../capplet/data/meego-toolbar-properties.desktop.in.h:2
+msgid "Toolbar settings"
+msgstr "Indstillinger for værktøjslinjen"
 
-#: ../src/meego-netbook.c:625
-msgid "Effects for Meego Netbooks"
-msgstr "Effekter til Meego Netbooks"
+#: ../capplet/src/mtp-bin.c:365
+msgid "Save toolbar"
+msgstr "Gem værktøjslinje"
 
-#: ../src/meego-netbook.c:2529
-msgid "Activate"
-msgstr "Aktivér"
+#: ../capplet/src/mtp-bin.c:370
+msgid "Sorry, you'll have to remove a panel before you can add a new one."
+msgstr ""
+"Beklager, men du bliver nødt til at fjerne et panel før du kan tilføje et "
+"nyt."
 
-#: ../src/meego-netbook.c:2543
-msgid "Unknown window"
-msgstr "Ukendt vindue"
+#: ../capplet/src/mtp-bin.c:372
+msgid "You can add, remove, and reorder many of the panels in your toolbar."
+msgstr ""
+"Du kan tilføje, fjerne og omorganisere mange af panelerne i din "
+"værktøjslinje."
 
-#: ../src/meego-netbook.c:2545
-msgid "Is asking for your attention."
-msgstr "Prøver at få din opmærksomhed."
+#: ../capplet/src/mtp-jar.c:110
+msgid "Available panels"
+msgstr "Tilgængelige paneler"
 
-#. translators: translate this to a suitable time format for your locale
-#. * showing only hours and minutes. For available format specifiers see
+#. translators: translate this to a suitable 24 hourt time format for
+#. * your locale showing only hours and minutes. For available format
+#. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../src/mnb-toolbar.c:668
+#. 
+#: ../capplet/src/mtp-clock.c:217 ../src/mnb-toolbar-clock.c:125
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#. translators: translate this to a suitable time format for your
+#. * locale showing only hours and minutes. For available format
+#. * specifiers see
+#. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#. 
+#. translators: translate this to a suitable default time format for
+#. * your locale showing only hours and minutes. For available format
+#. * specifiers see
+#. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#. 
+#: ../capplet/src/mtp-clock.c:227 ../src/mnb-toolbar-clock.c:134
 msgid "%l:%M %P"
 msgstr "%H:%M"
 
 #. translators: translate this to a suitable date format for your locale.
 #. * For availabe format specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../src/mnb-toolbar.c:678
+#. 
+#: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
 msgstr "%e. %B, %Y"
 
-#: ../src/notifications/mnb-notification.c:262
+#: ../capplet/src/mtp-cc-panel.c:118
+msgid "Toolbar"
+msgstr "Værktøjslinje"
+
+#: ../capplet/data/system-tray-properties.desktop.in.h:1
+msgid "Set your system-tray preferences"
+msgstr "Angiv indstillinger for dit statusfelt"
+
+#: ../capplet/data/system-tray-properties.desktop.in.h:2
+#: ../capplet/src/syst-cc-panel.c:245
+msgid "System Tray"
+msgstr "Statusfelt"
+
+#: ../capplet/src/syst-cc-panel.c:176
+msgid "Show system tray"
+msgstr "Vis statusfelt"
+
+#: ../capplet/src/syst-cc-panel.c:200
+msgid ""
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
+msgstr ""
+"Statusfeltet er et koncept som bruges af visse ældre programmer til at gøre "
+"dig opmærksom på når noget sker eller blive ved med at køre når du lukker "
+"dem."
+
+#: ../data/mutter-meego.schemas.in.h:1
+msgid "Always use small screen mode"
+msgstr "Brug altid lille skærmtilstand"
+
+#: ../data/mutter-meego.schemas.in.h:2
+msgid "Determines the order of panels on the toolbar."
+msgstr "Bestemmer rækkefølgen på paneler i værktøjslinjen."
+
+#: ../data/mutter-meego.schemas.in.h:3
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"Påtvinger at lille skærmtilstand bruges, selv når skærmstørrelsen normalt "
+"ville udløse en større skærmtilstand."
+
+#: ../data/mutter-meego.schemas.in.h:4
+msgid "Order of panels on toolbar"
+msgstr "Rækkefølge på paneler i værktøjslinjen"
+
+#: ../src/meego-netbook.c:846
+msgid "Meego Netbook Effects"
+msgstr ""
+
+#: ../src/meego-netbook.c:850
+msgid "Effects for Meego Netbooks"
+msgstr ""
+
+#: ../src/mnb-toolbar.c:985
+#, c-format
+msgid "Sorry, %s is broken"
+msgstr "Beklager, %s er i stykker"
+
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "Forkast"
 
-#: ../src/notifications/mnb-notification-cluster.c:668
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
 msgstr "Forkast alle"
 
-#: ../src/switcher/mnb-switcher.c:307
-msgid "No Zones yet"
-msgstr "Endnu ingen zoner"
-
-#: ../src/switcher/mnb-switcher.c:327
-msgid ""
-"Applications you’re using will show up here. You will be able to switch and "
-"organize them to your heart's content."
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
+#, c-format
+msgid "%i pending messages"
 msgstr ""
-"Programmer som du bruger vil blive vist her. Du vil kunne skifte mellem dem "
-"og organisere dem efter dine egne ønsker."
 
-#: ../src/switcher/mnb-switcher-zone-apps.c:463
-msgid "No applications on this zone"
-msgstr "Ingen programmer i denne zone"
+#: ../src/notifications/ntf-tray.c:570
+msgid "1 pending message"
+msgstr ""
+
+#: ../src/notifications/ntf-wm.c:112
+msgid "Unknown window"
+msgstr "Ukendt vindue"
+
+#: ../src/notifications/ntf-wm.c:116
+msgid "is asking for your attention."
+msgstr "beder om din opmærksomhed."
+
+#: ../src/notifications/ntf-wm.c:124
+msgid "Activate"
+msgstr "Aktivér"
+
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
+#, c-format
+msgid "Starting %s"
+msgstr ""
+
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
+#, c-format
+msgid "Opening %s"
+msgstr ""
+
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
+#, c-format
+msgid "Opening %d Item"
+msgid_plural "Opening %d Items"
+msgstr[0] ""
+msgstr[1] ""
+
+

@@ -1,20 +1,21 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 
-# Jean Cayron <jean.cayron@gmail.com>, 2009.
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mutter-meego.master.mutter-meego-netbook-plugin\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-23 22:53+0000\n"
-"PO-Revision-Date: 2010-02-03 18:21+0100\n"
-"Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
+"Project-Id-Version: mutter-meego\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-03 19:07+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 0.3\n"
+"Language: wa\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
@@ -24,17 +25,21 @@ msgstr "Definixhoz les preferinces di vosse bår ås usteyes"
 msgid "Toolbar settings"
 msgstr "Tchuzes del bår ås usteyes"
 
-#: ../capplet/src/mtp-bin.c:362
+#: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
 msgstr "Schaper bår ås usteyes"
 
-#: ../capplet/src/mtp-bin.c:367
+#: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "Dji rgrete mins vos alez dveur oister on scriftôr divant saveur endè radjouter on novea."
+msgstr ""
+"Dji rgrete mins vos alez dveur oister on scriftôr divant saveur endè "
+"radjouter on novea."
 
-#: ../capplet/src/mtp-bin.c:369
+#: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "Vos ploz radjouter, oister oudon-bén radjinçner bråmint des scriftôrs e vosse båre ås usteyes."
+msgstr ""
+"Vos ploz radjouter, oister oudon-bén radjinçner bråmint des scriftôrs e "
+"vosse båre ås usteyes."
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
@@ -80,17 +85,22 @@ msgid "Set your system-tray preferences"
 msgstr "Definixhoz les preferinces di vosse boesse ås imådjetes do sistinme"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:241
+#: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
 msgstr "Boesse ås imådjetes sistinme"
 
-#: ../capplet/src/syst-cc-panel.c:174
+#: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
 msgstr "Mostrer boesse ås imådjetes sistinme"
 
-#: ../capplet/src/syst-cc-panel.c:195
-msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
-msgstr "Li boesse ås imådjetes sistinme est ene atuze eployeye pa des pus vîs programes po vos dire cwand åk si passe ou po dmorer ovrant cwand vos les cloyoz."
+#: ../capplet/src/syst-cc-panel.c:200
+msgid ""
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
+msgstr ""
+"Li boesse ås imådjetes sistinme est ene atuze eployeye pa des pus vîs "
+"programes po vos dire cwand åk si passe ou po dmorer ovrant cwand vos les "
+"cloyoz."
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
@@ -101,83 +111,74 @@ msgid "Determines the order of panels on the toolbar."
 msgstr "Dit l' ôre des scriftôrs sol bår ås usteyes."
 
 #: ../data/mutter-meego.schemas.in.h:3
-msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
-msgstr "Fwait k' ons eploye todi l' môde po les ptitès waitroûles minme sel grandeu d' håynaedje a dandjî d' on môde di waitroûle pus grand."
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"Fwait k' ons eploye todi l' môde po les ptitès waitroûles minme sel grandeu "
+"d' håynaedje a dandjî d' on môde di waitroûle pus grand."
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
 msgstr "Ôre des scriftôrs sol bår ås usteyes"
 
-#: ../src/meego-netbook.c:829
+#: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr "Efets po Netbook da Meego"
+msgstr ""
 
-#: ../src/meego-netbook.c:833
+#: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr "Efets da Meego po les Netbooks"
+msgstr ""
 
-#: ../src/mnb-toolbar.c:1007
+#: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
 msgstr "Dji rgrete, %s est sketé"
 
-#: ../src/notifications/ntf-notification.c:234
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "Rinoncî"
 
-#: ../src/notifications/ntf-tray.c:308
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
 msgstr "Rinoncî a ttafwait"
 
-#: ../src/notifications/ntf-tray.c:481 ../src/notifications/ntf-tray.c:557
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
 #, c-format
 msgid "%i pending messages"
-msgstr "%i messaedjes ratindnut"
+msgstr ""
 
-#: ../src/notifications/ntf-tray.c:535
+#: ../src/notifications/ntf-tray.c:570
 msgid "1 pending message"
-msgstr "1 messaedje ratind"
+msgstr ""
 
-#: ../src/notifications/ntf-wm.c:103
+#: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
 msgstr "Purnea nén cnoxhou"
 
-#: ../src/notifications/ntf-wm.c:107
+#: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
 msgstr "vos arinne."
 
-#: ../src/notifications/ntf-wm.c:115
+#: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
 msgstr "Mete en alaedje"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
 #, c-format
 msgid "Starting %s"
-msgstr "Dj' enonde %s"
+msgstr ""
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
 #, c-format
 msgid "Opening %s"
-msgstr "Dji drove %s"
+msgstr ""
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
 #, c-format
 msgid "Opening %d Item"
 msgid_plural "Opening %d Items"
-msgstr[0] "Dji drove %d cayet"
-msgstr[1] "Dji drove %d cayets"
+msgstr[0] ""
+msgstr[1] ""
 
-#~ msgid "System tray"
-#~ msgstr "Boesse ås imådjetes sistinme"
 
-#~ msgid "zones"
-#~ msgstr "redjons"
-
-#~ msgid "No Zones yet"
-#~ msgstr "Nén co d' redjon"
-
-#~ msgid "Applications you’re using will show up here. You will be able to switch and organize them to your heart's content."
-#~ msgstr "Les programes ki vs eployîz vont aparexhe vaici. Vos pôroz ndè candjî eyet les assonrer sorlon çou k' vos veyoz voltî."
-
-#~ msgid "No applications on this zone"
-#~ msgstr "Nou programe dins cisse redjon"

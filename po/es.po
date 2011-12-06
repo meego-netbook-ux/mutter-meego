@@ -1,17 +1,22 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+#   <demarcosj@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: Meego UX\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-03 11:52+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Pablo Barbecho <pablo.barbecho@ptiglobal.net>\n"
-"Language-Team: \n"
+"Project-Id-Version: mutter-meego\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-30 11:17+0000\n"
+"Last-Translator: GLS_Translator_ESP1 <demarcosj@gmail.com>\n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/meego/team/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
@@ -21,17 +26,20 @@ msgstr "Configura las preferencias la barra de herramientas"
 msgid "Toolbar settings"
 msgstr "Barra de herramientas"
 
-#: ../capplet/src/mtp-bin.c:362
+#: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
 msgstr "Guardar la barra de herramientas"
 
-#: ../capplet/src/mtp-bin.c:367
+#: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "Lo sentimos, pero hay que quitar un panel para poder agregar uno nuevo."
+msgstr ""
+"Lo sentimos, pero hay que quitar un panel para poder agregar uno nuevo."
 
-#: ../capplet/src/mtp-bin.c:369
+#: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "Se pueden agregar, eliminar o reordenar muchos de los paneles de la barra de herramientas."
+msgstr ""
+"Se pueden agregar, eliminar o reordenar muchos de los paneles de la barra de"
+" herramientas."
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
@@ -77,17 +85,21 @@ msgid "Set your system-tray preferences"
 msgstr "Configura las preferencias de la bandeja del sistema"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:241
+#: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
 msgstr "Bandeja del sistema"
 
-#: ../capplet/src/syst-cc-panel.c:174
+#: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
 msgstr "Mostrar la bandeja del sistema"
 
-#: ../capplet/src/syst-cc-panel.c:195
-msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
-msgstr "Algunas aplicaciones antiguas emplean la bandeja del sistema para comunicar lo que va ocurriendo o para seguir ejecutándose al cerrarlas."
+#: ../capplet/src/syst-cc-panel.c:200
+msgid ""
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
+msgstr ""
+"Algunas aplicaciones antiguas emplean la bandeja del sistema para comunicar "
+"lo que va ocurriendo o para seguir ejecutándose al cerrarlas."
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
@@ -98,59 +110,74 @@ msgid "Determines the order of panels on the toolbar."
 msgstr "Determina el orden de los paneles en la barra de herramientas."
 
 #: ../data/mutter-meego.schemas.in.h:3
-msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
-msgstr "Fuerza el modo de pantalla pequeña incluso cuando el tamaño de la pantalla normalmente implicaría un modo de pantalla mayor."
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"Fuerza el modo de pantalla pequeña incluso cuando el tamaño de la pantalla "
+"normalmente implicaría un modo de pantalla mayor."
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
 msgstr "Orden de los paneles en la barra de herramientas"
 
-# Meego effects in the netbook
-#: ../src/meego-netbook.c:825
+#: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr "Efectos de Meego en el miniportátil"
+msgstr "Efectos de miniportátiles Meego "
 
-# Effects for netbooks with Mobin
-#: ../src/meego-netbook.c:829
+#: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr "Efectos para miniportátiles con Meego"
+msgstr "Efectos para miniportátiles Meego"
 
-#: ../src/mnb-toolbar.c:1007
+#: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
 msgstr "Lo sentimos, %s no funciona."
 
-#: ../src/notifications/ntf-notification.c:224
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "Cerrar"
 
-#: ../src/notifications/ntf-tray.c:308
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
 msgstr "Cerrar todo"
 
-#: ../src/notifications/ntf-wm.c:103
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
+#, c-format
+msgid "%i pending messages"
+msgstr "%i mensajes pendientes"
+
+#: ../src/notifications/ntf-tray.c:570
+msgid "1 pending message"
+msgstr "1 mensaje pendiente"
+
+#: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
 msgstr "Ventana desconocida"
 
-#: ../src/notifications/ntf-wm.c:107
+#: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
 msgstr "está pidiendo tu atención."
 
-#: ../src/notifications/ntf-wm.c:115
+#: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
 msgstr "Activar"
 
-#~ msgid "System tray"
-#~ msgstr "Bandeja del sistema"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
+#, c-format
+msgid "Starting %s"
+msgstr "Iniciando %s"
 
-#~ msgid "Less than a minute ago"
-#~ msgstr "Hace menos de un minuto"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
+#, c-format
+msgid "Opening %s"
+msgstr "Abriendo %s"
 
-#~ msgid "A few minutes ago"
-#~ msgstr "Hace unos minutos"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
+#, c-format
+msgid "Opening %d Item"
+msgid_plural "Opening %d Items"
+msgstr[0] "Abriendo %d elemento"
+msgstr[1] "Abriendo %d elementos"
 
-#~ msgid "A couple of hours ago"
-#~ msgstr "Hace un par de horas"
 
-#~ msgid "Earlier today"
-#~ msgstr "Hoy, pero antes"

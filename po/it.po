@@ -1,21 +1,22 @@
-# Italian translations for mutter-meego package.
-# Copyright (C) 2009 mutter-meego's copyright holder.
-# This file is distributed under the same license as the mutter-meego package.
-# Milo Casagrande <milo@ubuntu.com>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <sbenassi@xmission.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mutter-meego\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-03 11:52+0000\n"
-"PO-Revision-Date: 2010-08-26 11:17-0800\n"
-"Last-Translator: francesca godani <francesca.godani@ptiglobal.net>\n"
-"Language-Team: Italian <tp@lists.linux.it>\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-30 00:55+0000\n"
+"Last-Translator: GLS_Translator_ITA2 <sbenassi@xmission.com>\n"
+"Language-Team: Italian (http://www.transifex.net/projects/p/meego/team/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: Italian\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
@@ -25,17 +26,21 @@ msgstr "Imposta le preferenze della barra degli strumenti"
 msgid "Toolbar settings"
 msgstr "Impostazioni della barra degli strumenti"
 
-#: ../capplet/src/mtp-bin.c:362
+#: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
 msgstr "Salva barra degli strumenti"
 
-#: ../capplet/src/mtp-bin.c:367
+#: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "Spiacenti, è necessario rimuovere un pannello prima di poter aggiungerne uno nuovo."
+msgstr ""
+"Spiacenti, è necessario rimuovere un pannello prima di poter aggiungerne uno"
+" nuovo."
 
-#: ../capplet/src/mtp-bin.c:369
+#: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "Puoi aggiungere, rimuovere o riorganizzare molti dei pannelli nella barra degli strumenti."
+msgstr ""
+"Puoi aggiungere, rimuovere o riorganizzare molti dei pannelli nella barra "
+"degli strumenti."
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
@@ -45,9 +50,8 @@ msgstr "Pannelli disponibili"
 #. * your locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:217
-#: ../src/mnb-toolbar-clock.c:125
+#. 
+#: ../capplet/src/mtp-clock.c:217 ../src/mnb-toolbar-clock.c:125
 msgid "%H:%M"
 msgstr "%H.%M"
 
@@ -55,23 +59,21 @@ msgstr "%H.%M"
 #. * locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
+#. 
 #. translators: translate this to a suitable default time format for
 #. * your locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:227
-#: ../src/mnb-toolbar-clock.c:134
+#. 
+#: ../capplet/src/mtp-clock.c:227 ../src/mnb-toolbar-clock.c:134
 msgid "%l:%M %P"
 msgstr "%H.%M"
 
 #. translators: translate this to a suitable date format for your locale.
 #. * For availabe format specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:249
-#: ../src/mnb-toolbar-clock.c:155
+#. 
+#: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
 msgstr "%e %B %Y"
 
@@ -84,17 +86,22 @@ msgid "Set your system-tray preferences"
 msgstr "Imposta le preferenze della barra degli strumenti"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:241
+#: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
 msgstr "Barra degli strumenti del sistema"
 
-#: ../capplet/src/syst-cc-panel.c:174
+#: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
 msgstr "Mostra la barra degli strumenti"
 
-#: ../capplet/src/syst-cc-panel.c:195
-msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
-msgstr "La barra degli strumenti del sistema è un concetto usato da alcune vecchie applicazioni per farti sapere quando succede qualcosa o per rimanere in esecuzione quando si chiudono."
+#: ../capplet/src/syst-cc-panel.c:200
+msgid ""
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
+msgstr ""
+"La barra degli strumenti del sistema è un concetto usato da alcune vecchie "
+"applicazioni per farti sapere quando succede qualcosa o per rimanere in "
+"esecuzione quando si chiudono."
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
@@ -105,360 +112,74 @@ msgid "Determines the order of panels on the toolbar."
 msgstr "Determina l'ordine dei pannelli sulla barra degli strumenti."
 
 #: ../data/mutter-meego.schemas.in.h:3
-msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
-msgstr "Usare sempre la modalità schermo ridotto anche se le dimensioni del display indicherebbero normalmente la modalità schermo grande."
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"Usare sempre la modalità schermo ridotto anche se le dimensioni del display "
+"indicherebbero normalmente la modalità schermo grande."
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
 msgstr "Ordine dei pannelli sulla barra degli strumenti"
 
-#: ../src/meego-netbook.c:825
+#: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr "Effetti netbook MeeGo"
+msgstr "Effetti netbook Meego"
 
-#: ../src/meego-netbook.c:829
+#: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr "Effetti per i netbook MeeGo"
+msgstr "Effetti per i netbook Meego"
 
-#: ../src/mnb-toolbar.c:1007
+#: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
 msgstr "Spiacente, %s non funziona"
 
-#: ../src/notifications/ntf-notification.c:224
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "Ignora"
 
-#: ../src/notifications/ntf-tray.c:308
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
 msgstr "Ignora tutto"
 
-#: ../src/notifications/ntf-wm.c:103
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
+#, c-format
+msgid "%i pending messages"
+msgstr "%i messaggi in sospeso"
+
+#: ../src/notifications/ntf-tray.c:570
+msgid "1 pending message"
+msgstr "1 messaggio in sospeso"
+
+#: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
 msgstr "Finestra sconosciuta"
 
-#: ../src/notifications/ntf-wm.c:107
+#: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
 msgstr "Richiede la tua attenzione."
 
-#: ../src/notifications/ntf-wm.c:115
+#: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
 msgstr "Attiva"
 
-#~ msgid "System tray"
-#~ msgstr "Barra degli strumenti del sistema"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
+#, c-format
+msgid "Starting %s"
+msgstr "Avvio di %s"
+
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
+#, c-format
+msgid "Opening %s"
+msgstr "Apertura di %s"
+
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
+#, c-format
+msgid "Opening %d Item"
+msgid_plural "Opening %d Items"
+msgstr[0] "Apertura di %d elemento"
+msgstr[1] "Apertura di %d elementi"
 
-#~ msgid "Socket for embedding"
-#~ msgstr "Presa per l'incorporamento"
 
-#~ msgid "- Meego Toolbar Preferences"
-#~ msgstr "Preferenze della barra degli strumenti Meego"
-
-#~ msgid "socket"
-#~ msgstr "presa"
-
-#~ msgid "zones"
-#~ msgstr "zone"
-
-#~ msgid "No Zones yet"
-#~ msgstr "Zone non definite"
-
-#~ msgid ""
-#~ "Applications you’re using will show up here. You will be able to switch "
-#~ "and organize them to your heart's content."
-#~ msgstr ""
-#~ "Le applicazioni in uso vengono mostrate qui. È possibile passare da "
-#~ "un'applicazione all'altra e organizzarle come meglio si crede."
-
-#~ msgid "No applications on this zone"
-#~ msgstr "Nessuna applicazione in questa zona"
-
-#~ msgid "Less than a minute ago"
-#~ msgstr "Meno di un minuto fa"
-
-#~ msgid "A few minutes ago"
-#~ msgstr "Alcuni minuti fa"
-
-#~ msgid "A couple of hours ago"
-#~ msgstr "Un paio d'ore fa"
-
-#~ msgid "Earlier today"
-#~ msgstr "Oggi"
-
-#~ msgid "On %A"
-#~ msgstr "%A"
-
-#~ msgid "Last week"
-#~ msgstr "La scorsa settimana"
-
-#~ msgid "A couple of weeks ago"
-#~ msgstr "Un paio di settimane fa"
-
-#~ msgid "This month"
-#~ msgstr "Questo mese"
-
-#~ msgid "Last month"
-#~ msgstr "Lo scorso mese"
-
-#~ msgid "This year"
-#~ msgstr "Quest'anno"
-
-#~ msgid "Last year"
-#~ msgstr "Lo scorso anno"
-
-#~ msgid "Ages ago"
-#~ msgstr "Anni fa"
-
-#~ msgid "power & brightness"
-#~ msgstr "alimentazione e luminosità"
-
-#~ msgid "volume"
-#~ msgstr "volume"
-
-#~ msgid "bluetooth"
-#~ msgstr "bluetooth"
-
-#~ msgid "networks"
-#~ msgstr "reti"
-
-#~ msgid "test"
-#~ msgstr "test"
-
-#~ msgid ""
-#~ "You need to play some music, look at some pictures or watch some video to "
-#~ "see your history here. In the meantime, you could take a look at some "
-#~ "sample media:"
-#~ msgstr ""
-#~ "La cronologia personale sarà disponibile solo dopo aver ascoltato della "
-#~ "musica, guardato alcune immagini o dei video. Per il momento sono "
-#~ "mostrati alcuni contenuti di esempio:"
-
-#~ msgid "Recently played"
-#~ msgstr "Riprodotti di recente"
-
-#~ msgid "Search results"
-#~ msgstr "Risultati ricerca"
-
-#~ msgid "Playqueue"
-#~ msgstr "Coda di riproduzione"
-
-#~ msgid "Season %u, Episode %u"
-#~ msgstr "Stagione %u, episodio %u"
-
-#~ msgid "Previous"
-#~ msgstr "Precedente"
-
-#~ msgid "Next"
-#~ msgstr "Successivo"
-
-#~ msgid "Media"
-#~ msgstr "Contenuti"
-
-#~ msgid "Search"
-#~ msgstr "Cerca"
-
-#~ msgid "Season %d Episode %d"
-#~ msgstr "Stagione %d episodio %d"
-
-#~ msgid "Season %d"
-#~ msgstr "Stagione %d"
-
-#~ msgid "Episode %d"
-#~ msgstr "Episodio %d"
-
-#~ msgid "Year %d"
-#~ msgstr "Anno %d"
-
-#~ msgid "media"
-#~ msgstr "contenuti"
-
-#~ msgid "Favourite Applications"
-#~ msgstr "Applicazioni preferite"
-
-#~ msgid "Applications"
-#~ msgstr "Applicazioni"
-
-#~ msgid "applications"
-#~ msgstr "applicazioni"
-
-#~ msgid ""
-#~ "As you visit web pages, your favorites will appear here and on the New "
-#~ "tab page in the browser."
-#~ msgstr ""
-#~ "Visitando delle pagine web, quelle preferite verranno visualizzate qui e "
-#~ "nella pagina «Nuova scheda» del browser."
-
-#~ msgid "Untitled"
-#~ msgstr "Senza nome"
-
-#~ msgid "New tab"
-#~ msgstr "Nuova scheda"
-
-#~ msgid "Internet"
-#~ msgstr "Internet"
-
-#~ msgid "Go"
-#~ msgstr "Vai"
-
-#~ msgid "Tabs"
-#~ msgstr "Schede"
-
-#~ msgid "Favorite pages"
-#~ msgstr "Pagine preferite"
-
-#~ msgid "internet"
-#~ msgstr "internet"
-
-#~ msgid "Search for %%s on %s"
-#~ msgstr "Cerca %%s con %s"
-
-#~ msgid "Go to %s"
-#~ msgstr "Vai a %s"
-
-#~ msgid "Copy"
-#~ msgstr "Copia"
-
-#~ msgid "the current selection to pasteboard"
-#~ msgstr "la selezione corrente negli appunti"
-
-#~ msgid "your selection"
-#~ msgstr "la selezione personale"
-
-#~ msgid "Pasteboard"
-#~ msgstr "Appunti"
-
-#~ msgid "You need to copy some text to use Pasteboard"
-#~ msgstr "È necessario copiare del testo per usare Appunti"
-
-#~ msgid "Clear pasteboard"
-#~ msgstr "Cancella appunti"
-
-#~ msgid "pasteboard"
-#~ msgstr "appunti"
-
-#~ msgid "<b>Appointments</b>"
-#~ msgstr "<b>Appuntamenti</b>"
-
-#~ msgid "No calendar entries this week"
-#~ msgstr "Questa settimana nessun appuntamento"
-
-#~ msgid ""
-#~ "Your friends' feeds and web services will appear here. Activate your "
-#~ "accounts now!"
-#~ msgstr ""
-#~ "Una volta attivati gli account personali, qui verranno mostrate le "
-#~ "notizie degli amici e i servizi web."
-
-#~ msgid "<b>Welcome to Meego 2.0 for Netbooks</b>"
-#~ msgstr "<b>Benvenuti in Meego 2.0 per netbook</b>"
-
-#~ msgid ""
-#~ "As Meego is a bit different to other computers, we've put together a "
-#~ "couple of bits and pieces to help you find your way around. We hope you "
-#~ "enjoy it, The Meego Team."
-#~ msgstr ""
-#~ "Poiché Meego è un po' diverso rispetto agli altri computer, abiamo "
-#~ "raccolto alcune informazioni per aiutare a comprendere al meglio come "
-#~ "usarlo. Speriamo troviate tutto di Vostro gradimento, il team Meego."
-
-#~ msgid "Web page"
-#~ msgstr "Pagina web"
-
-#~ msgid "Nothing to do today"
-#~ msgstr "Oggi nessuna attività"
-
-#~ msgid "Due %x"
-#~ msgstr "In scadenza il %x"
-
-#~ msgid "people"
-#~ msgstr "persone"
-
-#~ msgid "Send an email"
-#~ msgstr "Invia un'email"
-
-#~ msgid "Edit details"
-#~ msgstr "Modifica dettagli"
-
-#~ msgid "Send a message"
-#~ msgstr "Invia un messaggio"
-
-#~ msgid ""
-#~ "Sorry, we can't find any people. Have you set up a Messenger account?"
-#~ msgstr ""
-#~ "Non è stata trovata alcuna persona. È stato configurato un account di "
-#~ "messaggistica istantanea?"
-
-#~ msgid "People"
-#~ msgstr "Persone"
-
-#~ msgid "Selection"
-#~ msgstr "Selezione"
-
-#~ msgid "Nobody selected"
-#~ msgstr "Nessuno selezionato"
-
-#~ msgid "Zone %d"
-#~ msgstr "Zona %d"
-
-#~ msgid "New zone (0)"
-#~ msgstr "Nuova zona (0)"
-
-#~ msgid "Choose zone for application:"
-#~ msgstr "Scegliere una zona per l'applicazione:"
-
-#~ msgid "To activate the toolbar, move your cursor to the top of the screen"
-#~ msgstr ""
-#~ "Per attivare la barra degli strumenti, muovere il puntatore verso la "
-#~ "parte superiore dello schermo"
-
-#~ msgid "Offline"
-#~ msgstr "Fuori rete"
-
-#~ msgid "Away"
-#~ msgstr "Assente"
-
-#~ msgid "Busy"
-#~ msgstr "Occupato"
-
-#~ msgid "Close"
-#~ msgstr "Chiudi"
-
-#~ msgid "Change"
-#~ msgstr "Modifica"
-
-#~ msgid "Unknown account"
-#~ msgstr "Account sconosciuto"
-
-#~ msgid "Edit"
-#~ msgstr "Modifica"
-
-#~ msgid "Enter your %s status here..."
-#~ msgstr "Scrivere qui il proprio stato per %s..."
-
-#~ msgid "Enter your current status here..."
-#~ msgstr "Scrivere qui il proprio stato..."
-
-#~ msgid "Post"
-#~ msgstr "Pubblica"
-
-#~ msgid "Your current status"
-#~ msgstr "Stato attuale"
-
-#~ msgid "Your current status - you are offline"
-#~ msgstr "Stato attuale - fuori rete"
-
-#~ msgid ""
-#~ "To update your web status you need to setup a Web Services account with a "
-#~ "provider that supports status messages"
-#~ msgstr ""
-#~ "Per aggiornare il proprio stato è necessario configurare un account di un "
-#~ "Servizio web che supporti i messaggi di stato"
-
-#~ msgid ""
-#~ "To update your IM status you need to setup an Instant Messaging account"
-#~ msgstr ""
-#~ "Per aggiornare il proprio stato IM è necessario configurare un account di "
-#~ "messaggistica istantanea"
-
-#~ msgid "status"
-#~ msgstr "stato"

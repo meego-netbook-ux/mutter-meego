@@ -3,44 +3,44 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# 9and3r <9and3r@gmail.com>, 2011.
+# Margie Foster <margie@linux.intel.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mutter-meego\n"
 "Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
 "POT-Creation-Date: 2011-11-04 12:46+0000\n"
-"PO-Revision-Date: 2011-11-03 19:07+0000\n"
-"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
-"Language-Team: Basque (http://www.transifex.net/projects/p/meego/team/eu/)\n"
+"PO-Revision-Date: 2011-11-30 20:39+0000\n"
+"Last-Translator: margie <margie@linux.intel.com>\n"
+"Language-Team: English (United States) (http://www.transifex.net/projects/p/meego/team/en_US/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: eu\n"
+"Language: en_US\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
-msgstr "Ezarri zure tresna barraren ezarpenak"
+msgstr "Set your toolbar preferences"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:2
 msgid "Toolbar settings"
-msgstr "Tresna barraren ezarpenak"
+msgstr "Toolbar settings"
 
 #: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
-msgstr "Gorde tresna barra"
+msgstr "Save toolbar"
 
 #: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "Barkatu, panelen bat kendu behar duzu beste bat gehitu aurretik."
+msgstr "Sorry, you'll have to remove a panel before you can add a new one."
 
 #: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "Tresna barran panelak gehitu, kendu, eta berroantolatu ditzakezu."
+msgstr "You can add, remove, and reorder many of the panels in your toolbar."
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
-msgstr "Panel eskuragarriak"
+msgstr "Available panels"
 
 #. translators: translate this to a suitable 24 hourt time format for
 #. * your locale showing only hours and minutes. For available format
@@ -71,110 +71,110 @@ msgstr "%l:%M %P"
 #. 
 #: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
-msgstr "%Y %B %e"
+msgstr "%B %e, %Y"
 
 #: ../capplet/src/mtp-cc-panel.c:118
 msgid "Toolbar"
-msgstr "Tresna barra"
+msgstr "Toolbar"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:1
 msgid "Set your system-tray preferences"
-msgstr "Ezarri zure sistema barraren ezarpenak"
+msgstr "Set your system-tray preferences"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
 #: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
-msgstr "Sistema Barra"
+msgstr "System Tray"
 
 #: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
-msgstr "Erakutsi sistema barra"
+msgstr "Show system tray"
 
 #: ../capplet/src/syst-cc-panel.c:200
 msgid ""
 "The system tray is a concept used by some older applications to let you know"
 " when something happens or to stay running when you close them."
 msgstr ""
-"Sistemaren barra aplikazio zahar batzuk erabiltzen duten kontzeptu bat da "
-"zuri abisatzeko zerbait gertatzean edo martxan jarraitzeko ixten dituzunean."
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
-msgstr "Beti erabili pantaila txiki modua"
+msgstr "Always use small screen mode"
 
 #: ../data/mutter-meego.schemas.in.h:2
 msgid "Determines the order of panels on the toolbar."
-msgstr "Panelen ordena tresna barran determinatzen du."
+msgstr "Determines the order of panels on the toolbar."
 
 #: ../data/mutter-meego.schemas.in.h:3
 msgid ""
 "Forces small screen mode to be used even if display size would normally "
 "imply bigger screen mode."
 msgstr ""
-"Erabili tamaina txikiko modua  pantaila handiagoko modua izan behar badu ere"
-" pantailaren tamainarengatik."
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
-msgstr "Panelen ordena tresna barran"
+msgstr "Order of panels on toolbar"
 
 #: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr ""
+msgstr "Meego Netbook Effects"
 
 #: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr ""
+msgstr "Effects for Meego Netbooks"
 
 #: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
-msgstr "Barkatu, %s apurtuta dago"
+msgstr "Sorry, %s is broken"
 
 #: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
-msgstr "Arbuiatu"
+msgstr "Dismiss"
 
 #: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
-msgstr "Guztiak Arbuiatu"
+msgstr "Dismiss All"
 
 #: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
 #, c-format
 msgid "%i pending messages"
-msgstr ""
+msgstr "%i pending messages"
 
 #: ../src/notifications/ntf-tray.c:570
 msgid "1 pending message"
-msgstr ""
+msgstr "1 pending message"
 
 #: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
-msgstr "Lehio ezezaguna"
+msgstr "Unknown window"
 
 #: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
-msgstr "zure atentzioa nahi du."
+msgstr "is asking for your attention."
 
 #: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
-msgstr "Gaitu"
+msgstr "Activate"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
 #, c-format
 msgid "Starting %s"
-msgstr ""
+msgstr "Starting %s"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
 #, c-format
 msgid "Opening %s"
-msgstr ""
+msgstr "Opening %s"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
 #, c-format
 msgid "Opening %d Item"
 msgid_plural "Opening %d Items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Opening %d Item"
+msgstr[1] "Opening %d Items"
 
 

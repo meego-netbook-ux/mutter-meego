@@ -1,44 +1,47 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# aboodi <dc.9@hotmail.com>, 2011.
+# mohammad Alhargan <malham1@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mutter-meego\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-03 11:52+0000\n"
-"PO-Revision-Date: 2009-11-10 23:16+0200\n"
-"Last-Translator: Yousef Abu Al Naser <yousef@itsoftex.com>\n"
-"Language-Team: ITSOFTEX <info@itsoftex.com>\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-03 19:07+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Arabic (http://www.transifex.net/projects/p/meego/team/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Arabic\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
-msgstr "تعيين تفضيلات شريط الأدوات"
+msgstr "تعيين تفضيلات شريط الأدوات الخاص بك"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:2
 msgid "Toolbar settings"
 msgstr "إعدادات شريط الأدوات"
 
-#: ../capplet/src/mtp-bin.c:362
+#: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
 msgstr "حفظ شريط الأدوات"
 
-#: ../capplet/src/mtp-bin.c:367
+#: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "عذرا ، سيكون عليك إزالة لوحة قبل أن تتمكن من إضافة واحدة جديدة."
+msgstr "عذرا ، يجب إزالة لوحة قبل أن تتمكن من إضافة واحدة جديدة."
 
-#: ../capplet/src/mtp-bin.c:369
+#: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "يمكنك إضافة وإزالة ، وإعادة ترتيب العديد من لوحات في شريط الأدوات."
+msgstr "يمكنك إضافة أو إزالة ، وإعادة ترتيب العديد من لوحات في شريط الأدوات."
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
-msgstr "تتوفر الألواح"
+msgstr "الألواح المتوفرة"
 
 #. translators: translate this to a suitable 24 hourt time format for
 #. * your locale showing only hours and minutes. For available format
@@ -69,7 +72,7 @@ msgstr "%l:%M %P"
 #. 
 #: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
-msgstr "%B %e, %Y"
+msgstr "%e %B, %Y"
 
 #: ../capplet/src/mtp-cc-panel.c:118
 msgid "Toolbar"
@@ -77,78 +80,105 @@ msgstr "شريط الأدوات"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:1
 msgid "Set your system-tray preferences"
-msgstr "تعيين تفضيلات لوحة النظام"
+msgstr "ضبط تفضيلات صينية النظام الخاص بك"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:241
+#: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
-msgstr "لوحة النظام"
+msgstr "صينية النظام"
 
-#: ../capplet/src/syst-cc-panel.c:174
+#: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
-msgstr "اظهر لوحة النظام"
+msgstr "إظهار صينية النظام"
 
-#: ../capplet/src/syst-cc-panel.c:195
-msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
-msgstr "لوحة النظام هي اداة تتيح معرفة حالة التطبيق"
+#: ../capplet/src/syst-cc-panel.c:200
+msgid ""
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
+msgstr ""
+"صينية النظام هي أداة تسخدم من قبل بعض التطبيقات القديمة لتعلمك عندما يحدث "
+"شيء أو عند بقاء التطبيقات  قيد التشغيل بعد إغلاقها."
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
-msgstr "دوما استخدام وضع الشاشة الصغيرة"
+msgstr "دوما استخدم الشاشة الصغيرة"
 
 #: ../data/mutter-meego.schemas.in.h:2
 msgid "Determines the order of panels on the toolbar."
-msgstr "ثبت ترتيب لوحات على شريط الأدوات."
+msgstr "ينظم لوحات النظام على شريط الأدوات"
 
 #: ../data/mutter-meego.schemas.in.h:3
-msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
-msgstr "استخدم وضع الشاشة الصغيرة حتى لو كان العرض الافتراضي وضع الشاشة الكبيرة"
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"استخدام وضع الشاشة الصغيرة دائماً حتى لو كان العرض الإفتراضي شاشة أكبر"
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
-msgstr "ترتيب اللوحات في شريط الأدوات"
+msgstr "ترتيب لوحات على شريط الأدوات"
 
-#: ../src/meego-netbook.c:825
+#: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr "ادوات ميقو للنوتبوك"
+msgstr ""
 
-#: ../src/meego-netbook.c:829
+#: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr "تأثيرات ميجو للنوتبوك"
+msgstr ""
 
-#: ../src/mnb-toolbar.c:1007
+#: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
-msgstr "عذراً، %s عطلان "
+msgstr "عذراً, %s معطل"
 
-#: ../src/notifications/ntf-notification.c:224
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "رفض"
 
-#: ../src/notifications/ntf-tray.c:308
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
-msgstr "رفض جميع"
+msgstr "رفض الكل"
 
-#: ../src/notifications/ntf-wm.c:103
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
+#, c-format
+msgid "%i pending messages"
+msgstr ""
+
+#: ../src/notifications/ntf-tray.c:570
+msgid "1 pending message"
+msgstr ""
+
+#: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
-msgstr " نافذة غير معروفة"
+msgstr "نافذة غير معروف"
 
-#: ../src/notifications/ntf-wm.c:107
+#: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
-msgstr "يطلب انتباهك"
+msgstr "يطلب اهتمامك."
 
-#: ../src/notifications/ntf-wm.c:115
+#: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
 msgstr "تفعيل"
 
-#~ msgid "zones"
-#~ msgstr "مناطق"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
+#, c-format
+msgid "Starting %s"
+msgstr ""
 
-#~ msgid "No Zones yet"
-#~ msgstr "لا مناطق حتى الآن"
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
+#, c-format
+msgid "Opening %s"
+msgstr ""
 
-#~ msgid "Applications you’re using will show up here. You will be able to switch and organize them to your heart's content."
-#~ msgstr "ستعرض هنا التطبيقات التي تستخدمها. سيكون بامكانك تبديلها وترتيبها بحسب رغبة قلبك."
+#: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
+#, c-format
+msgid "Opening %d Item"
+msgid_plural "Opening %d Items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
 
-#~ msgid "No applications on this zone"
-#~ msgstr "لا يوجد تطبيقات في هذه المنطقة"
+

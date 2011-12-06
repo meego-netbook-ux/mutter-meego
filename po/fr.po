@@ -1,18 +1,22 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <mademoisellegeek42@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-23 22:53+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Martine <martine.landais@intel.com>\n"
-"Language-Team: \n"
+"Project-Id-Version: mutter-meego\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-28 19:17+0000\n"
+"Last-Translator: MademoiselleGeek <mademoisellegeek42@gmail.com>\n"
+"Language-Team: French (http://www.transifex.net/projects/p/meego/team/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Poedit-Language: French\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
@@ -22,55 +26,53 @@ msgstr "Définir les préférences de la barre d’outils"
 msgid "Toolbar settings"
 msgstr "Paramètres de la barre d’outils"
 
-#: ../capplet/src/mtp-bin.c:362
+#: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
 msgstr "Sauvegarder la barre d’outils"
 
-#: ../capplet/src/mtp-bin.c:367
+#: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "Désolé, vous devez supprimer un panneau avant d’en rajouter un nouveau."
+msgstr ""
+"Désolé, vous devez supprimer un panneau avant d’en rajouter un nouveau."
 
-#: ../capplet/src/mtp-bin.c:369
+#: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "Vous pouvez ajouter, supprimer ou réorganiser la plupart des panneaux dans votre barre d’outils."
+msgstr ""
+"Vous pouvez ajouter, supprimer ou réorganiser la plupart des panneaux dans "
+"votre barre d’outils."
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
 msgstr "Panneaux disponibles"
 
-# For France, use 24-hour clock
 #. translators: translate this to a suitable 24 hourt time format for
 #. * your locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:217
-#: ../src/mnb-toolbar-clock.c:125
+#. 
+#: ../capplet/src/mtp-clock.c:217 ../src/mnb-toolbar-clock.c:125
 msgid "%H:%M"
 msgstr "%H:%M"
 
-# For France, use 24-hour clock
 #. translators: translate this to a suitable time format for your
 #. * locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
+#. 
 #. translators: translate this to a suitable default time format for
 #. * your locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:227
-#: ../src/mnb-toolbar-clock.c:134
+#. 
+#: ../capplet/src/mtp-clock.c:227 ../src/mnb-toolbar-clock.c:134
 msgid "%l:%M %P"
 msgstr "%H:%M"
 
 #. translators: translate this to a suitable date format for your locale.
 #. * For availabe format specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:249
-#: ../src/mnb-toolbar-clock.c:155
+#. 
+#: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
 msgstr "%e %B %Y"
 
@@ -83,17 +85,22 @@ msgid "Set your system-tray preferences"
 msgstr "Définir les préférences de la barre d’état"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:241
+#: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
 msgstr "Barre d'état"
 
-#: ../capplet/src/syst-cc-panel.c:174
+#: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
 msgstr "Montrer la barre d'état"
 
-#: ../capplet/src/syst-cc-panel.c:195
-msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
-msgstr "La barre d'état est un concept utilisé par certaines applications pour vous permettre de savoir quand quelque chose se passe ou pour rester en exécution lorsque vous les fermez."
+#: ../capplet/src/syst-cc-panel.c:200
+msgid ""
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
+msgstr ""
+"La barre d'état est un concept utilisé par certaines applications pour vous "
+"permettre de savoir quand quelque chose se passe ou pour rester en exécution"
+" lorsque vous les fermez."
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
@@ -104,227 +111,74 @@ msgid "Determines the order of panels on the toolbar."
 msgstr "Établit l'ordre des panneaux sur la barre d'outils."
 
 #: ../data/mutter-meego.schemas.in.h:3
-msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
-msgstr "Force l'utilisation du mode petit écran même quand la taille de l'écran pourrait autoriser un mode d'écran plus large."
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"Force l'utilisation du mode petit écran même quand la taille de l'écran "
+"pourrait autoriser un mode d'écran plus large."
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
 msgstr "Ordre des panneaux sur la barre d'outils"
 
-#: ../src/meego-netbook.c:829
+#: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr "Effets spéciaux pour Netbooks utilisant MeeGo"
+msgstr "Effets Netbook Meego"
 
-#: ../src/meego-netbook.c:833
+#: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr "Effets spéciaux pour Netbooks utilisant MeeGo"
+msgstr "Effects pour Netbooks Meego"
 
-#: ../src/mnb-toolbar.c:1007
+#: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
 msgstr "Désolé, %s est corrompu"
 
-#: ../src/notifications/ntf-notification.c:234
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "Ignorer"
 
-#: ../src/notifications/ntf-tray.c:308
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
 msgstr "Tout ignorer"
 
-#: ../src/notifications/ntf-tray.c:481
-#: ../src/notifications/ntf-tray.c:557
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
 #, c-format
 msgid "%i pending messages"
 msgstr "%i messages en attente"
 
-#: ../src/notifications/ntf-tray.c:535
+#: ../src/notifications/ntf-tray.c:570
 msgid "1 pending message"
 msgstr "1 message en attente"
 
-#: ../src/notifications/ntf-wm.c:103
+#: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
 msgstr "Fenêtre inconnue"
 
-#: ../src/notifications/ntf-wm.c:107
+#: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
 msgstr "requiert votre attention."
 
-#: ../src/notifications/ntf-wm.c:115
+#: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
 msgstr "Activer"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
 #, c-format
 msgid "Starting %s"
-msgstr "En cours de démarrage %s"
+msgstr "Démarrage de %s"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
 #, c-format
 msgid "Opening %s"
-msgstr "En cours d'ouverture %s"
+msgstr "Ouverture de %s"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
 #, c-format
 msgid "Opening %d Item"
 msgid_plural "Opening %d Items"
-msgstr[0] "Item en cours d'ouverture %d"
-msgstr[1] "Items en cours d'ouverture %d"
+msgstr[0] "Ouverture d'%d élément"
+msgstr[1] "Ouverture de %d éléments"
 
-#~ msgid "System tray"
-#~ msgstr "Barre d'état"
 
-#~ msgid "Socket for embedding"
-#~ msgstr "Socket pour l’intégration"
-
-#~ msgid "- Meego Toolbar Preferences"
-#~ msgstr "- Préférences de la barre d’outils Meego"
-
-#~ msgid "socket"
-#~ msgstr "socket"
-
-#~ msgid "zones"
-#~ msgstr "zones"
-
-#~ msgid "No Zones yet"
-#~ msgstr "Aucune zone n'est définie"
-
-#~ msgid ""
-#~ "Applications you’re using will show up here. You will be able to switch "
-#~ "and organize them to your heart's content."
-#~ msgstr ""
-#~ "Les applications que vous utilisez vont apparaître ici. Vous pourrez les "
-#~ "organizer et y accéder à votre guise."
-
-#~ msgid "No applications on this zone"
-#~ msgstr "Pas d'applications dans cette zone"
-
-#~ msgid "Less than a minute ago"
-#~ msgstr "Il y a moins d'une minute"
-
-#~ msgid "A few minutes ago"
-#~ msgstr "Il y a quelques minutes"
-
-#~ msgid "A couple of hours ago"
-#~ msgstr "Il y a quelques heures"
-
-#~ msgid "Earlier today"
-#~ msgstr "Un peu plus tôt aujourd'hui"
-
-#~ msgid "On %A"
-#~ msgstr "%A"
-
-#~ msgid "Last week"
-#~ msgstr "La semaine dernière"
-
-#~ msgid "A couple of weeks ago"
-#~ msgstr "Il y a quelques semaines"
-
-#~ msgid "This month"
-#~ msgstr "Ce mois"
-
-#~ msgid "Last month"
-#~ msgstr "Le mois dernier"
-
-#~ msgid "This year"
-#~ msgstr "Cette année"
-
-#~ msgid "Last year"
-#~ msgstr "L'année dernière"
-
-#~ msgid "Ages ago"
-#~ msgstr "Ça fait un bail"
-
-#~ msgid ""
-#~ "You need to play some music, look at some pictures or watch some video to "
-#~ "see your history here. In the meantime, you could take a look at some "
-#~ "sample media:"
-#~ msgstr ""
-#~ "Vous devez avoir écouté de la musique, regardé des photos ou des vidéos "
-#~ "avant de pouvoir consulter votre historique. Pour le moment, vous pouvez "
-#~ "accéder à des fichiers multimédia de démo :"
-
-#~ msgid "Recently played"
-#~ msgstr "Récemment utilisés"
-
-#~ msgid "Search results"
-#~ msgstr "Résultats de recherche"
-
-#~ msgid "Playqueue"
-#~ msgstr "File de lecture"
-
-#~ msgid "Season %u, Episode %u"
-#~ msgstr "Saison %u, épisode %u"
-
-#~ msgid "Previous"
-#~ msgstr "Précédent"
-
-#~ msgid "Next"
-#~ msgstr "Suivant"
-
-#~ msgid "Media"
-#~ msgstr "Fichiers multimédia"
-
-#~ msgid "Search"
-#~ msgstr "Rechercher"
-
-#~ msgid "Season %d Episode %d"
-#~ msgstr "Saison %d épisode %d"
-
-#~ msgid "Season %d"
-#~ msgstr "Saison %d"
-
-#~ msgid "Episode %d"
-#~ msgstr "Épisode %d"
-
-#~ msgid "Year %d"
-#~ msgstr "Année %d"
-
-#~ msgid "media"
-#~ msgstr "fichiers multimédia"
-
-#~ msgid "Favourite Applications"
-#~ msgstr "Applications favorites"
-
-#~ msgid "Applications"
-#~ msgstr "Applications"
-
-#~ msgid "applications"
-#~ msgstr "applications"
-
-#~ msgid ""
-#~ "As you visit web pages, your favorites will appear here and on the New "
-#~ "tab page in the browser."
-#~ msgstr ""
-#~ "Lorsque vous visitez des pages web, vos pages favorites apparaissent ici "
-#~ "et sur la page Nouvel onglet du navigateur."
-
-#~ msgid "Untitled"
-#~ msgstr "Sans titre"
-
-#~ msgid "New tab"
-#~ msgstr "Nouvel onglet"
-
-#~ msgid "Internet"
-#~ msgstr "Internet"
-
-#~ msgid "Go"
-#~ msgstr "Lancer"
-
-#~ msgid "Tabs"
-#~ msgstr "Onglets"
-
-#~ msgid "Favorite pages"
-#~ msgstr "Pages favorites"
-
-#~ msgid "internet"
-#~ msgstr "Internet"
-
-#~ msgid "Search for %%s on %s"
-#~ msgstr "Chercher %%s dans %s"
-
-#~ msgid "Go to %s"
-#~ msgstr "Aller sur %s"
-
-#~ msgid "Copy"
-#~ msgstr "Copier"

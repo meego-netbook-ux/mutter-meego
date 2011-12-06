@@ -1,20 +1,21 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
-# A S Alam <aalam@users.sf.net>, 2009, 2010.
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mutter-meego.Meego2-UI.mutter-meego-netbook-plugin\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-23 22:53+0000\n"
-"PO-Revision-Date: 2010-10-31 07:37+0530\n"
-"Last-Translator: A S Alam <aalam@users.sf.net>\n"
-"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"Project-Id-Version: mutter-meego\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-03 19:07+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Panjabi (Punjabi) <punjabi-users@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: pa\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
@@ -24,17 +25,19 @@ msgstr "ਆਪਣੀ ਟੂਲਬਾਰ ਪਸੰਦ ਸੈੱਟ ਕਰੋ"
 msgid "Toolbar settings"
 msgstr "ਟੂਲਬਾਰ ਸੈਟਿੰਗ"
 
-#: ../capplet/src/mtp-bin.c:362
+#: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
 msgstr "ਟੂਲਬਾਰ ਸੰਭਾਲੋ"
 
-#: ../capplet/src/mtp-bin.c:367
+#: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "ਅਫਸੋਸ, ਤੁਹਾਨੂੰ ਨਵਾਂ ਪੈਨਲ ਸ਼ਾਮਲ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਇੱਕ ਪੈਨਲ ਨੂੰ ਹਟਾਉਣਾ ਪਵੇਗਾ।"
+msgstr "ਅਫਸੋਸ, ਤੁਹਾਨੂੰ ਹੋਰ ਪੈਨਲ ਜੋੜਨ ਤੋਂ ਪਹਿਲਾਂ ਇੱਕ ਪੈਨਲ ਹਟਾਉਣਾ ਪਵੇਗਾ।"
 
-#: ../capplet/src/mtp-bin.c:369
+#: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "ਤੁਸੀਂ ਆਪਣੇ ਟੂਲਬਾਰ ਵਿੱਚ ਕਈ ਪੈਨਲ ਜੋੜ, ਹਟਾ ਜਾਂ ਉਨ੍ਹਾਂ ਦਾ ਕ੍ਰਮ ਬਦਲ ਸਕਦੇ ਹੋ।"
+msgstr ""
+"ਤੁਸੀਂ ਆਪਣੀ ਟੂਲਬਾਰ ਉੱਤੇ ਕਈ ਪੈਨਲ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ, ਹਟਾ ਸਕਦੇ ਹੋ ਜਾਂ ਕ੍ਰਮ ਬਦਲ "
+"ਸਕਦੇ ਹੋ।"
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
@@ -44,7 +47,7 @@ msgstr "ਉਪਲੱਬਧ ਪੈਨਲ"
 #. * your locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
+#. 
 #: ../capplet/src/mtp-clock.c:217 ../src/mnb-toolbar-clock.c:125
 msgid "%H:%M"
 msgstr "%H:%M"
@@ -53,12 +56,12 @@ msgstr "%H:%M"
 #. * locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
+#. 
 #. translators: translate this to a suitable default time format for
 #. * your locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
+#. 
 #: ../capplet/src/mtp-clock.c:227 ../src/mnb-toolbar-clock.c:134
 msgid "%l:%M %P"
 msgstr "%l:%M %P"
@@ -66,7 +69,7 @@ msgstr "%l:%M %P"
 #. translators: translate this to a suitable date format for your locale.
 #. * For availabe format specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
+#. 
 #: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
 msgstr "%e %B %Y"
@@ -77,24 +80,24 @@ msgstr "ਟੂਲਬਾਰ"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:1
 msgid "Set your system-tray preferences"
-msgstr "ਆਪਣੀ ਸਿਸਟਮ-ਟਰੇ ਪਸੰਦ ਸੈੱਟ ਕਰੋ"
+msgstr "ਆਪਣੀ ਸਿਸਟਮ ਟਰੇ ਪਸੰਦ ਸੈੱਟ ਕਰੋ"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:241
+#: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
 msgstr "ਸਿਸਟਮ ਟਰੇ"
 
-#: ../capplet/src/syst-cc-panel.c:174
+#: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
 msgstr "ਸਿਸਟਮ ਟਰੇ ਵੇਖੋ"
 
-#: ../capplet/src/syst-cc-panel.c:195
+#: ../capplet/src/syst-cc-panel.c:200
 msgid ""
-"The system tray is a concept used by some older applications to let you know "
-"when something happens or to stay running when you close them."
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
 msgstr ""
-"ਸਿਸਟਮ ਟਰੇ ਦੇ ਢੰਗ ਨੂੰ ਕੋਈ ਪੁਰਾਣੀਆਂ ਐਪਲੀਕੇਸ਼ਨ ਵਲੋਂ ਤੁਹਾਨੂੰ ਸੂਚਿਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਜਦੋਂ ਕੁਝ "
-"ਵਾਪਰਦਾ ਹੈ ਜਾਂ ਚੱਲਦੀਆਂ ਰਹਿੰਦੀਆਂ ਹਨ, ਜਦੋਂ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਬੰਦ ਕਰਦੇ ਹੋ।"
+"ਸਿਸਟਮ ਟਰੇ ਕੁਝ ਪੁਰਾਣੀਆਂ ਐਪਲੀਕੇਸ਼ਨ ਵਲੋਂ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਜਿਸ ਨਾਲ ਤੁਸੀਂ ਜਾਣ ਸਕਦੇ"
+" ਹੋ ਕੀ ਹੋ ਰਿਹਾ ਹੈ ਜਾਂ ਚੱਲਦੀਆਂ ਹਨ, ਜਦੋਂ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਬੰਦ ਕਰਦੇ ਹੋ।"
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
@@ -102,369 +105,77 @@ msgstr "ਹਮੇਸ਼ਾ ਛੋਟੀ ਸਕਰੀਨ ਮੋਡ ਵਰਤੋ�
 
 #: ../data/mutter-meego.schemas.in.h:2
 msgid "Determines the order of panels on the toolbar."
-msgstr "ਟੂਲਬਾਰ ਉੱਤੇ ਪੈਨਲਾਂ ਦਾ ਕ੍ਰਮ ਤਹਿ ਕਰੋ"
+msgstr "ਟੂਲਬਾਰ ਉੱਤੇ ਪੈਨਲ ਦੀ ਸਥਿਤੀ ਪਤਾ ਕਰੋ।"
 
 #: ../data/mutter-meego.schemas.in.h:3
 msgid ""
 "Forces small screen mode to be used even if display size would normally "
 "imply bigger screen mode."
 msgstr ""
-"ਜੇ ਸਕਰੀਨ ਦਾ ਆਕਾਰ ਸਧਾਰਨ ਵੀ ਹੋਵੇ ਤਾਂ ਵੀ ਵੱਡੀ ਸਕਰੀਨ ਮੋਡ ਦੀ ਬਜਾਏ ਛੋਟੀ ਸਕਰੀਨ ਮੋਡ ਲਈ ਮਨਜ਼ੂਰ "
-"ਕਰੋ।"
+"ਛੋਟੀ ਸਕਰੀਨ ਮੋਡ ਨੂੰ ਵਰਤਣ ਲਈ ਮਜ਼ਬੂਰ ਕਰਦੀ ਹੈ, ਭਾਵੇਂ ਕਿ ਡਿਸਪਲੇਅ ਸਧਾਰਨ ਆਕਾਰ ਦਾ "
+"ਹੋਵੇ ਭਾਵੇ ਵੱਡੀ ਸਕਰੀਨ ਮੋਡ ਦਾ।"
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
-msgstr "ਟੂਲਬਾਰ ਉੱਤੇ ਪੈਨਲ ਦਾ ਕ੍ਰਮ"
+msgstr "ਟੂਲਬਾਰ ਉੱਤੇ ਪੈਨਲ ਦੀ ਕ੍ਰਮ"
 
-#: ../src/meego-netbook.c:829
+#: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr "ਮੋਬਲਿਨ ਨੈੱਟਬੁੱਕ ਪਰਭਾਵ"
+msgstr ""
 
-#: ../src/meego-netbook.c:833
+#: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr "ਮੋਬਲਿਨ ਨੈੱਟਬੁੱਕ ਲਈ ਪਰਭਾਵ"
+msgstr ""
 
-#: ../src/mnb-toolbar.c:1007
+#: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
-msgstr "ਅਫਸੋਸ, %s ਖ਼ਰਾਬ ਹੈ"
+msgstr "ਅਫਸੋਸ, %s ਖ਼ਰਾਬ ਹੈ।"
 
-#: ../src/notifications/ntf-notification.c:234
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "ਅਣਡਿੱਠਾ"
 
-#: ../src/notifications/ntf-tray.c:308
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
 msgstr "ਸਭ ਅਣਡਿੱਠੇ"
 
-#: ../src/notifications/ntf-tray.c:481 ../src/notifications/ntf-tray.c:557
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
 #, c-format
 msgid "%i pending messages"
-msgstr "%i ਬਾਕੀ ਸੁਨੇਹੇ"
+msgstr ""
 
-#: ../src/notifications/ntf-tray.c:535
+#: ../src/notifications/ntf-tray.c:570
 msgid "1 pending message"
-msgstr "੧ ਬਾਕੀ ਸੁਨੇਹਾ"
+msgstr ""
 
-#: ../src/notifications/ntf-wm.c:103
+#: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
 msgstr "ਅਣਜਾਣ ਵਿੰਡੋ"
 
-#: ../src/notifications/ntf-wm.c:107
+#: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
 msgstr "ਤੁਹਾਡਾ ਧਿਆਨ ਮੰਗ ਰਹੀ ਹੈ।"
 
-#: ../src/notifications/ntf-wm.c:115
+#: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
-msgstr "ਐਕਟੀਵੇਟ"
+msgstr "ਸਰਗਰਮ"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
 #, c-format
 msgid "Starting %s"
-msgstr "%s ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+msgstr ""
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
 #, c-format
 msgid "Opening %s"
-msgstr "%s ਖੋਲ੍ਹਿਆ ਜਾ ਰਿਹਾ ਹੈ"
+msgstr ""
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
 #, c-format
 msgid "Opening %d Item"
 msgid_plural "Opening %d Items"
-msgstr[0] "%d ਆਈਟਮ ਖੋਲ੍ਹੀ ਜਾ ਰਹੀ ਹੈ"
-msgstr[1] "%d ਆਈਟਮਾਂ ਖੋਲ੍ਹੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
+msgstr[0] ""
+msgstr[1] ""
 
-#~ msgid ""
-#~ "You need to play some music, look at some pictures or watch some video to "
-#~ "see your history here. In the meantime, you could take a look at some "
-#~ "sample media:"
-#~ msgstr ""
-#~ "ਤੁਹਾਨੂੰ ਆਪਣਾ ਅਤੀਤ ਇੱਥੇ ਵੇਖਣ ਲਈ ਕੁਝ ਸੰਗੀਤ ਚਲਾਉਣਾ ਪਵੇਗਾ, ਕੁਝ ਤਸਵੀਰਾਂ ਜਾਂ ਕੁਝ ਵਿਡੀਓ ਵੇਖਣੀਆਂ "
-#~ "ਪੈਣਗੀਆਂ। ਉਸ ਸਮੇਂ ਤੱਕ ਤੁਸੀਂ ਕੁਝ ਸੈਂਪਲ ਮੀਡਿਆ ਵੇਖ ਸਕਦੇ ਹੋ:"
 
-#~ msgid "Recently played"
-#~ msgstr "ਤਾਜ਼ਾ ਚਲਾਏ"
-
-#~ msgid "Search results"
-#~ msgstr "ਖੋਜ ਨਤੀਜੇ"
-
-#~ msgid "Playqueue"
-#~ msgstr "ਪਲੇਅਕਤਾਰ"
-
-#~ msgid "Season %u, Episode %u"
-#~ msgstr "ਸ਼ੀਜਨ %u, ਕਾਂਡ %u"
-
-#~ msgid "Previous"
-#~ msgstr "ਪਿੱਛੇ"
-
-#~ msgid "Next"
-#~ msgstr "ਅੱਗੇ"
-
-#~ msgid "Media"
-#~ msgstr "ਮੀਡਿਆ"
-
-#~ msgid "Search"
-#~ msgstr "ਖੋਜ"
-
-#~ msgid "Season %d Episode %d"
-#~ msgstr "ਸ਼ੀਜਨ %d ਕਾਂਡ %d"
-
-#~ msgid "Season %d"
-#~ msgstr "ਸੀਜ਼ਨ %d"
-
-#~ msgid "Episode %d"
-#~ msgstr "ਕਾਂਡ %d"
-
-#~ msgid "Year %d"
-#~ msgstr "ਸਾਲ %d"
-
-#~ msgid "media"
-#~ msgstr "ਮੀਡਿਆ"
-
-#~ msgid "Favourite Applications"
-#~ msgstr "ਪਸੰਦੀਦਾ ਐਪਲੀਕੇਸ਼ਨ"
-
-#~ msgid "Applications"
-#~ msgstr "ਐਪਲੀਕੇਸ਼ਨ"
-
-#~ msgid "applications"
-#~ msgstr "ਐਪਲੀਕੇਸ਼ਨ"
-
-#~ msgid "Less than a minute ago"
-#~ msgstr "ਇੱਕ ਮਿੰਟ ਤੋਂ ਘੱਟ ਪਹਿਲਾਂ"
-
-#~ msgid "A few minutes ago"
-#~ msgstr "ਕੁਝ ਕੁ ਮਿੰਟ ਪਹਿਲਾਂ"
-
-#~ msgid "A couple of hours ago"
-#~ msgstr "ਕੁਝ ਘੰਟੇ ਪਹਿਲਾਂ"
-
-#~ msgid "Earlier today"
-#~ msgstr "ਅੱਜ ਤੜਕੇ"
-
-#~ msgid "On %A"
-#~ msgstr "%A ਉੱਤੇ"
-
-#~ msgid "Last week"
-#~ msgstr "ਪਿਛਲੇ ਹਫ਼ਤੇ"
-
-#~ msgid "A couple of weeks ago"
-#~ msgstr "ਕੁਝ ਹਫ਼ਤੇ ਪਹਿਲਾਂ"
-
-#~ msgid "This month"
-#~ msgstr "ਇਹ ਮਹੀਨੇ"
-
-#~ msgid "Last month"
-#~ msgstr "ਪਿਛਲੇ ਮਹੀਨੇ"
-
-#~ msgid "This year"
-#~ msgstr "ਇਹ ਸਾਲ"
-
-#~ msgid "Last year"
-#~ msgstr "ਪਿਛਲੇ ਸਾਲ"
-
-#~ msgid "Ages ago"
-#~ msgstr "ਕਈ ਸਾਲ ਪਹਿਲਾਂ"
-
-#~ msgid ""
-#~ "As you visit web pages, your favorites will appear here and on the New "
-#~ "tab page in the browser."
-#~ msgstr ""
-#~ "ਜਦੋਂ ਤੁਸੀਂ ਵੈੱਬ ਪੇਜ਼ ਖੋਲ੍ਹਦੇ ਹੋ, ਤੁਹਾਡੇ ਪਸੰਦੀਦਾ (favorites) ਇੱਥੇ ਬਰਾਊਜ਼ਰ ਦੇ ਨਵੀਂ ਟੈਬ ਪੇਜ਼ ਉੱਤੇ "
-#~ "ਵੇਖਾਈ ਦੇਣਗੇ।"
-
-#~ msgid "Untitled"
-#~ msgstr "ਬਿਨ-ਟਾਈਟਲ"
-
-#~ msgid "New tab"
-#~ msgstr "ਨਵੀਂ ਟੈਬ"
-
-#~ msgid "Internet"
-#~ msgstr "ਇੰਟਰਨੈੱਟ"
-
-#~ msgid "Go"
-#~ msgstr "ਜਾਓ"
-
-#~ msgid "Tabs"
-#~ msgstr "ਟੈਬਾਂ"
-
-#~ msgid "Favorite pages"
-#~ msgstr "ਪਸੰਦੀਦਾ ਪੇਜ਼"
-
-#~ msgid "internet"
-#~ msgstr "ਇੰਟਰਨੈੱਟ"
-
-#~ msgid "Search for %%s on %s"
-#~ msgstr "%%s ਲਈ %s ਉੱਤੇ ਖੋਜ"
-
-#~ msgid "Go to %s"
-#~ msgstr "%s ਉੱਤੇ ਜਾਓ"
-
-#~ msgid "Copy"
-#~ msgstr "ਕਾਪੀ ਕਰੋ"
-
-#~ msgid "the current selection to pasteboard"
-#~ msgstr "ਮੌਜੂਦਾ ਚੋਣ ਨੂੰ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ"
-
-#~ msgid "your selection"
-#~ msgstr "ਤੁਹਾਡੀ ਚੋਣ"
-
-#~ msgid "Pasteboard"
-#~ msgstr "ਪੇਸਟਬੋਰਡ"
-
-#~ msgid "You need to copy some text to use Pasteboard"
-#~ msgstr "ਤੁਹਾਨੂੰ ਪੇਸਟਬੋਰਡ ਵਰਤਣ ਲਈ ਕੁਝ ਟੈਕਸਟ ਕਾਪੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
-
-#~ msgid "Clear pasteboard"
-#~ msgstr "ਪੇਸਟਬੋਰਡ ਸਾਫ਼ ਕਰੋ"
-
-#~ msgid "pasteboard"
-#~ msgstr "ਪੇਸਟਬੋਰਡ"
-
-#~ msgid "<b>Appointments</b>"
-#~ msgstr "<b>ਮੁਲਾਕਾਤ</b>"
-
-#~ msgid "No calendar entries this week"
-#~ msgstr "ਇਸ ਹਫ਼ਤੇ ਲਈ ਕੋਈ ਕੈਲੰਡਰ ਐਂਟਰੀ ਨਹੀਂ"
-
-#~ msgid ""
-#~ "Your friends' feeds and web services will appear here. Activate your "
-#~ "accounts now!"
-#~ msgstr ""
-#~ "ਤੁਹਾਡੇ ਦੋਸਤਾਂ ਦੀ ਫੀਡ ਅਤੇ ਵੈੱਬ ਸਰਵਿਸਾਂ ਇੱਥੇ ਵੇਖਾਈ ਦੇਣਗੀਆਂ। ਆਪਣੇ ਅਕਾਊਂਟ ਹੁਣੇ ਐਕਟੀਵੇਟ ਕਰੋ!"
-
-#~ msgid "<b>Welcome to Meego 2.0 for Netbooks</b>"
-#~ msgstr "<b>ਨੈੱਟਬੁੱਕ ਲਈ ਮੋਬਲਿਨ ੨.੦ ਵਲੋਂ ਜੀ ਆਇਆਂ ਨੂੰ</b>"
-
-#~ msgid ""
-#~ "As Meego is a bit different to other computers, we've put together a "
-#~ "couple of bits and pieces to help you find your way around. We hope you "
-#~ "enjoy it, The Meego Team."
-#~ msgstr ""
-#~ "ਮੋਬਲਿਨ ਹੋਰ ਕੰਪਿਊਟਰ ਤੋਂ ਕੁਝ ਅੱਡ ਹੈ, ਅਸੀਂ ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਕੰਮ ਕਰਨ ਲਈ ਮੱਦਦਗਾਰ ਹੋਣ ਵਾਸਤੇ ਬਹੁਤ ਕੁਝ "
-#~ "ਇੱਕਠਾ ਕੀਤਾ ਹੈ। ਅਸੀਂ ਉਮੀਦ ਕਰਦੇ ਹਾਂ ਕਿ ਤੁਸੀਂ ਇਸ ਨਾਲ ਮੌਜਾਂ ਮਾਣੋਗੇ, ਮੋਬਲਿਨ ਟੀਮ"
-
-#~ msgid "Web page"
-#~ msgstr "ਵੈੱਬ ਪੇਜ਼"
-
-#~ msgid "Nothing to do today"
-#~ msgstr "ਅੱਜ ਕਰਨ ਲਈ ਕੁਝ ਨਹੀਂ"
-
-#~ msgid "Due %x"
-#~ msgstr "%x ਨੂੰ ਦੇਣਾ"
-
-#~ msgid "people"
-#~ msgstr "ਲੋਕ"
-
-#~ msgid "Send an email"
-#~ msgstr "ਈਮੇਲ ਭੇਜੋ"
-
-#~ msgid "Edit details"
-#~ msgstr "ਵੇਰਵਾ ਸੋਧ"
-
-#~ msgid ""
-#~ "Sorry, we can't find any people. Have you set up a Messenger account?"
-#~ msgstr "ਅਫਸੋਸ, ਅਸੀਂ ਲੋਕ ਨਹੀਂ ਲੱਭ ਸਕੇ ਹਾਂ। ਤੁਸੀਂ ਤੁਸੀਂ ਮੈਸੈਂਜ਼ਰ ਅਕਾਊਂਟ ਸੈਟਅੱਪ ਕੀਤਾ ਹੈ?"
-
-#~ msgid "People"
-#~ msgstr "ਲੋਕ"
-
-#~ msgid "Selection"
-#~ msgstr "ਚੋਣ"
-
-#~ msgid "Nobody selected"
-#~ msgstr "ਕੋਈ ਨਹੀਂ ਚੁਣਿਆ"
-
-#~ msgid "zones"
-#~ msgstr "ਜ਼ੋਨ"
-
-#~ msgid "Zone %d"
-#~ msgstr "ਜ਼ੋਨ %d"
-
-#~ msgid "New zone (0)"
-#~ msgstr "ਨਵਾਂ ਜ਼ੋਨ (0)"
-
-#~ msgid "Choose zone for application:"
-#~ msgstr "ਐਪਲੀਕੇਸ਼ਨ ਲਈ ਜ਼ੋਨ ਚੁਣੋ:"
-
-#~ msgid "No Zones yet"
-#~ msgstr "ਕੋਈ ਜ਼ੋਨ ਹਾਲੇ ਨਹੀਂ ਚੁਣਿਆ"
-
-#~ msgid ""
-#~ "Applications you’re using will show up here. You will be able to switch "
-#~ "and organise them to your heart's content."
-#~ msgstr ""
-#~ "ਐਪਲੀਕੇਸ਼ਨ, ਜੋ ਤੁਸੀਂ ਵਰਤ ਰਹੇ ਹੋ, ਇੱਥੇ ਵੇਖ ਸਕੋਗੇ। ਤੁਸੀਂ ਉਹਨਾਂ ਨੂੰ ਵੇਖ ਅਤੇ ਬਦਲ ਸਕੋਗੇ, ਜਿਵੇਂ ਤੁਹਾਡਾ "
-#~ "ਦਿਲ ਕਰੇ।"
-
-#~ msgid "No applications on this zone"
-#~ msgstr "ਇਸ ਜ਼ੋਨ ਲਈ ਕੋਈ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ"
-
-#~ msgid "power & brightness"
-#~ msgstr "ਪਾਵਰ ਅਤੇ ਚਮਕ"
-
-#~ msgid "volume"
-#~ msgstr "ਆਵਾਜ਼"
-
-#~ msgid "bluetooth"
-#~ msgstr "ਬਲਿਊਟੁੱਥ"
-
-#~ msgid "networks"
-#~ msgstr "ਨੈੱਟਵਰਕ"
-
-#~ msgid "test"
-#~ msgstr "ਟੈਸਟ"
-
-#~ msgid "To activate the toolbar, move your cursor to the top of the screen"
-#~ msgstr "ਟੂਲਬਾਰ ਐਕਟੀਵੇਟ ਕਰਨ ਵਾਸਤੇ ਆਪਣੇ ਕਰਸਰ ਨੂੰ ਸਕਰੀਨ ਦੇ ਉੱਤੇ ਲੈ ਕੇ ਜਾਉ"
-
-#~ msgid "Offline"
-#~ msgstr "ਆਫਲਾਈਨ"
-
-#~ msgid "Away"
-#~ msgstr "ਦੂਰ"
-
-#~ msgid "Busy"
-#~ msgstr "ਰੁਝੇ"
-
-#~ msgid "Close"
-#~ msgstr "ਬੰਦ ਕਰੋ"
-
-#~ msgid "Change"
-#~ msgstr "ਬਦਲੋ"
-
-#~ msgid "Unknown account"
-#~ msgstr "ਅਣਜਾਣ ਅਕਾਊਂਟ"
-
-#~ msgid "Edit"
-#~ msgstr "ਸੋਧ"
-
-#~ msgid "Enter your %s status here..."
-#~ msgstr "ਆਪਣੀ %s ਹਾਲਤ ਇੱਥੇ ਦਿਓ..."
-
-#~ msgid "Enter your current status here..."
-#~ msgstr "ਆਪਣੀ ਮੌਜੂਦਾ ਹਾਲਤ ਏਥੇ ਦਿਓ..."
-
-#~ msgid "Post"
-#~ msgstr "ਪੋਸਟ"
-
-#~ msgid "Your current status"
-#~ msgstr "ਆਪਣੀ ਮੌਜੂਦਾ ਹਾਲਤ"
-
-#~ msgid "Your current status - you are offline"
-#~ msgstr "ਆਪਣੀ ਮੌਜੂਦਾ ਹਾਲਤ - ਤੁਸੀਂ ਆਫਲਾਈਨ ਹੋ"
-
-#~ msgid ""
-#~ "To update your web status you need to setup a Web Services account with a "
-#~ "provider that supports status messages"
-#~ msgstr ""
-#~ "ਤੁਹਾਡੀ ਵੈੱਬ ਹਾਲਤ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਤੁਹਾਨੂੰ ਇੱਕ ਵੈੱਬ ਸਰਵਿਸ ਅਕਾਊਂਟ ਇੱਕ ਪਰੋਵਾਇਡਰ ਨਾਲ ਸੈੱਟਅੱਪ "
-#~ "ਕਰਨ ਦੀ ਲੋੜ ਹੈ, ਜੋ ਕਿ ਹਾਲਤ ਸੁਨੇਹੇ ਅੱਪਡੇਟ ਲਈ ਸਹਾਇਕ ਹੈ।"
-
-#~ msgid ""
-#~ "To update your IM status you need to setup an Instant Messaging account"
-#~ msgstr "ਤੁਹਾਡੇ IM ਹਾਲਤ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਵਾਸਤੇ, ਤੁਹਾਨੂੰ ਤੁਰੰਤ ਮੈਸੈਜ਼ਿੰਗ ਅਕਾਊਂਟ ਸੈੱਟਅੱਪ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
-
-#~ msgid "status"
-#~ msgstr "ਹਾਲਤ"

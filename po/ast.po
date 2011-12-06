@@ -1,18 +1,21 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Meego UX\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-23 22:53+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Iñigo Varela <ivarela@softastur.org>\n"
-"Language-Team: asturian <alministradores@softastur.org>\n"
+"Project-Id-Version: mutter-meego\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-03 19:07+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Asturian <alministradores@softastur.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: asturian\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: ast\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../capplet/data/meego-toolbar-properties.desktop.in.h:1
 msgid "Set your toolbar preferences"
@@ -22,17 +25,20 @@ msgstr "Configura les preferencies la barra de ferramientes"
 msgid "Toolbar settings"
 msgstr "Barra de ferramientes"
 
-#: ../capplet/src/mtp-bin.c:362
+#: ../capplet/src/mtp-bin.c:365
 msgid "Save toolbar"
 msgstr "Guardar la barra de ferramientes"
 
-#: ../capplet/src/mtp-bin.c:367
+#: ../capplet/src/mtp-bin.c:370
 msgid "Sorry, you'll have to remove a panel before you can add a new one."
-msgstr "Sentímoslo, pero tienes que desaniciar un panel pa poder amestar ún nuevu."
+msgstr ""
+"Sentímoslo, pero tienes que desaniciar un panel pa poder amestar ún nuevu."
 
-#: ../capplet/src/mtp-bin.c:369
+#: ../capplet/src/mtp-bin.c:372
 msgid "You can add, remove, and reorder many of the panels in your toolbar."
-msgstr "Puede amestase, desaniciase o axeitase munchos de los paneles de la barra de ferramientes."
+msgstr ""
+"Puede amestase, desaniciase o axeitase munchos de los paneles de la barra de"
+" ferramientes."
 
 #: ../capplet/src/mtp-jar.c:110
 msgid "Available panels"
@@ -42,9 +48,8 @@ msgstr "Paneles disponibles"
 #. * your locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:217
-#: ../src/mnb-toolbar-clock.c:125
+#. 
+#: ../capplet/src/mtp-clock.c:217 ../src/mnb-toolbar-clock.c:125
 msgid "%H:%M"
 msgstr "%H.%M h"
 
@@ -52,23 +57,21 @@ msgstr "%H.%M h"
 #. * locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
+#. 
 #. translators: translate this to a suitable default time format for
 #. * your locale showing only hours and minutes. For available format
 #. * specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:227
-#: ../src/mnb-toolbar-clock.c:134
+#. 
+#: ../capplet/src/mtp-clock.c:227 ../src/mnb-toolbar-clock.c:134
 msgid "%l:%M %P"
 msgstr "%H.%M h"
 
 #. translators: translate this to a suitable date format for your locale.
 #. * For availabe format specifiers see
 #. * http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#.
-#: ../capplet/src/mtp-clock.c:249
-#: ../src/mnb-toolbar-clock.c:155
+#. 
+#: ../capplet/src/mtp-clock.c:249 ../src/mnb-toolbar-clock.c:155
 msgid "%B %e, %Y"
 msgstr "%e de %B de %Y"
 
@@ -81,17 +84,21 @@ msgid "Set your system-tray preferences"
 msgstr "Configura les preferencies de la bandexa del sistema"
 
 #: ../capplet/data/system-tray-properties.desktop.in.h:2
-#: ../capplet/src/syst-cc-panel.c:241
+#: ../capplet/src/syst-cc-panel.c:245
 msgid "System Tray"
 msgstr "Bandexa del sistema"
 
-#: ../capplet/src/syst-cc-panel.c:174
+#: ../capplet/src/syst-cc-panel.c:176
 msgid "Show system tray"
 msgstr "Amosar la bandexa del sistema"
 
-#: ../capplet/src/syst-cc-panel.c:195
-msgid "The system tray is a concept used by some older applications to let you know when something happens or to stay running when you close them."
-msgstr "Dalgunes aplicaciones antigües empleguen la bandexa del sistema pa comunicar lo que va asocediendo o pa siguir executándose al pesllales."
+#: ../capplet/src/syst-cc-panel.c:200
+msgid ""
+"The system tray is a concept used by some older applications to let you know"
+" when something happens or to stay running when you close them."
+msgstr ""
+"Dalgunes aplicaciones antigües empleguen la bandexa del sistema pa comunicar"
+" lo que va asocediendo o pa siguir executándose al pesllales."
 
 #: ../data/mutter-meego.schemas.in.h:1
 msgid "Always use small screen mode"
@@ -102,83 +109,74 @@ msgid "Determines the order of panels on the toolbar."
 msgstr "Determina l'orde de los paneles na barra de ferramientes."
 
 #: ../data/mutter-meego.schemas.in.h:3
-msgid "Forces small screen mode to be used even if display size would normally imply bigger screen mode."
-msgstr "Fuercia'l mou de pantalla pequeña inclusu cuando'l tamañu de la pantalla normalmente implicaría un mou de pantalla mayor."
+msgid ""
+"Forces small screen mode to be used even if display size would normally "
+"imply bigger screen mode."
+msgstr ""
+"Fuercia'l mou de pantalla pequeña inclusu cuando'l tamañu de la pantalla "
+"normalmente implicaría un mou de pantalla mayor."
 
 #: ../data/mutter-meego.schemas.in.h:4
 msgid "Order of panels on toolbar"
 msgstr "Orde de los paneles na barra de ferramientes"
 
-# Meego effects in the netbook
-#: ../src/meego-netbook.c:829
+#: ../src/meego-netbook.c:846
 msgid "Meego Netbook Effects"
-msgstr "Efeutos de Meego nel miniportátil"
+msgstr ""
 
-# Effects for netbooks with Mobin
-#: ../src/meego-netbook.c:833
+#: ../src/meego-netbook.c:850
 msgid "Effects for Meego Netbooks"
-msgstr "Efeutos pa miniportátiles con Meego"
+msgstr ""
 
-#: ../src/mnb-toolbar.c:1007
+#: ../src/mnb-toolbar.c:985
 #, c-format
 msgid "Sorry, %s is broken"
 msgstr "Sentímoslo, %s nun funciona."
 
-#: ../src/notifications/ntf-notification.c:234
+#: ../src/notifications/ntf-notification.c:292
 msgid "Dismiss"
 msgstr "Zarrar"
 
-#: ../src/notifications/ntf-tray.c:308
+#: ../src/notifications/ntf-tray.c:311
 msgid "Dismiss All"
 msgstr "Zarrar too"
 
-#: ../src/notifications/ntf-tray.c:481
-#: ../src/notifications/ntf-tray.c:557
+#: ../src/notifications/ntf-tray.c:516 ../src/notifications/ntf-tray.c:592
 #, c-format
 msgid "%i pending messages"
-msgstr "%i mensaxes pendientes"
+msgstr ""
 
-#: ../src/notifications/ntf-tray.c:535
+#: ../src/notifications/ntf-tray.c:570
 msgid "1 pending message"
-msgstr "1 mensaxe pendiente"
+msgstr ""
 
-#: ../src/notifications/ntf-wm.c:103
+#: ../src/notifications/ntf-wm.c:112
 msgid "Unknown window"
 msgstr "Ventana desconocida"
 
-#: ../src/notifications/ntf-wm.c:107
+#: ../src/notifications/ntf-wm.c:116
 msgid "is asking for your attention."
 msgstr "ta pidiendo la to atención."
 
-#: ../src/notifications/ntf-wm.c:115
+#: ../src/notifications/ntf-wm.c:124
 msgid "Activate"
 msgstr "Activar"
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:320
 #, c-format
 msgid "Starting %s"
-msgstr "Aniciando %s"
+msgstr ""
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:322
 #, c-format
 msgid "Opening %s"
-msgstr "Abriendo %s"
+msgstr ""
 
 #: ../libmeego-panel/meego-panel/gdkapplaunchcontext-x11.c:325
 #, c-format
 msgid "Opening %d Item"
 msgid_plural "Opening %d Items"
-msgstr[0] "Abriendo %d elementu"
-msgstr[1] "Abriendo %d elementos"
+msgstr[0] ""
+msgstr[1] ""
 
-#~ msgid "System tray"
-#~ msgstr "Bandexa del sistema"
-#~ msgid "Less than a minute ago"
-#~ msgstr "Fai menos d'un minutu"
-#~ msgid "A few minutes ago"
-#~ msgstr "Fai unos minutos"
-#~ msgid "A couple of hours ago"
-#~ msgstr "Fai un par d'hores"
-#~ msgid "Earlier today"
-#~ msgstr "Güei, ceo"
 
